@@ -176,7 +176,6 @@ const sentinel = document.getElementById('loader-area');
 const io = new IntersectionObserver(entries => {
   if (entries[0].isIntersecting) loadBatch();
 }, { rootMargin: '300px 0px', threshold: 0 });
-io.observe(sentinel);
 
 const cardObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
@@ -222,6 +221,7 @@ fetch('data/events.json')
     allEvents = Array.isArray(data) ? data : [];
     filtered  = allEvents;
     loadBatch();
+    io.observe(sentinel);
   })
   .catch(err => {
     console.error('Failed to load events.json:', err);
