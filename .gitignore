@@ -19,6 +19,7 @@ web/js/admin.js
 Thumbs.db
 .vscode/
 .idea/
+.claude
 
 # Logs
 *.log
