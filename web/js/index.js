@@ -121,7 +121,10 @@ function applySearch(q) {
     filtered = allEvents.filter(ev =>
       ev.title.toLowerCase().includes(lower) ||
       (ev.desc  || '').toLowerCase().includes(lower) ||
-      (ev.tags  || []).some(t => t.toLowerCase().includes(lower))
+      (ev.tags  || []).some(t => t.toLowerCase().includes(lower)) ||
+      ev.date.includes(lower) ||
+      fmtDate(ev.date).includes(q) ||
+      fmtRoc(ev.date).includes(q)
     );
   }
 }
@@ -155,6 +158,7 @@ function doSearch() {
   }
 
   window.scrollTo({ top: 0, behavior: 'smooth' });
+  refreshLayout();
 
   setTimeout(() => {
     io.unobserve(document.getElementById('loader-area'));
@@ -197,16 +201,21 @@ const cardObserver = new IntersectionObserver(entries => {
 const searchWrap = document.getElementById('search-wrap');
 const headerEl   = document.querySelector('header');
 
-window.addEventListener('scroll', () => {
+function refreshLayout() {
   const scrolled = window.scrollY > 60;
-  headerEl.style.transform = scrolled ? 'translateY(-100%)' : '';
-  searchWrap.classList.toggle('visible', scrolled);
+  const hasQuery = !!searchQuery;
+  headerEl.style.transform = (scrolled || hasQuery) ? 'translateY(-100%)' : '';
+  searchWrap.classList.toggle('visible', scrolled || hasQuery);
+}
+
+window.addEventListener('scroll', () => {
+  refreshLayout();
 
   const badge = document.getElementById('search-badge');
-  if (searchQuery && scrolled) {
+  if (searchQuery) {
     badge.style.display = 'block';
     badge.classList.add('visible');
-  } else if (!searchQuery) {
+  } else {
     badge.classList.remove('visible');
     setTimeout(() => { if (!searchQuery) badge.style.display = 'none'; }, 300);
   }
