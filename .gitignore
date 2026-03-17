@@ -1,0 +1,24 @@
+# Go backend (local only)
+cmd/
+internal/
+go.mod
+go.sum
+schema.sql
+
+# Environment & database
+.env
+*.db
+
+# Admin panel (local only)
+web/admin.html
+web/css/admin.css
+web/js/admin.js
+
+# OS & editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
