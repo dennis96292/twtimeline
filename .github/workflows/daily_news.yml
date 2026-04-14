@@ -1,0 +1,77 @@
+name: Daily Taiwan History Agent
+
+on:
+  schedule:
+    # 14:00 UTC = 22:00 Taiwan time (UTC+8)
+    - cron: '0 14 * * *'
+  workflow_dispatch:
+    inputs:
+      target_date:
+        description: 'Target date (YYYY-MM-DD), leave blank for today'
+        required: false
+        default: ''
+
+jobs:
+  news-agent:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: agents/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r agents/requirements.txt
+
+      - name: Run web search agent
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TARGET_DATE: ${{ github.event.inputs.target_date }}
+        run: python agents/news_agent.py
+
+      - name: Check if new events were found
+        id: check
+        run: |
+          if [ -f agents/.no_new_events ]; then
+            echo "has_events=false" >> "$GITHUB_OUTPUT"
+            cat agents/.no_new_events
+          else
+            echo "has_events=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Read PR body
+        id: pr_body
+        if: steps.check.outputs.has_events == 'true'
+        run: |
+          {
+            echo 'body<<PR_BODY_EOF'
+            cat agents/.pr_body.md
+            echo 'PR_BODY_EOF'
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Create Pull Request
+        if: steps.check.outputs.has_events == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "feat: add Taiwan events for ${{ github.event.inputs.target_date || 'today' }}"
+          branch: "auto/news-${{ github.run_id }}"
+          delete-branch: true
+          title: "自動新增台灣重大事件 (${{ github.event.inputs.target_date || 'auto' }})"
+          body: ${{ steps.pr_body.outputs.body }}
+          labels: "auto-news,needs-review"
+          draft: false
+
+      - name: Cleanup temp files
+        if: always()
+        run: |
+          rm -f agents/.no_new_events agents/.pr_body.md
