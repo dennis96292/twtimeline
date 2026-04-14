@@ -38,6 +38,25 @@ jobs:
           TARGET_DATE: ${{ github.event.inputs.target_date }}
         run: python agents/news_agent.py
 
+      - name: Update README stats
+        run: |
+          python3 - <<'EOF'
+          import json, re
+          from pathlib import Path
+
+          data = json.loads(Path("data/events.json").read_text(encoding="utf-8"))
+          count = len(data)
+          year_start = min(e["date"][:4] for e in data)
+          year_end   = max(e["date"][:4] for e in data)
+
+          readme = Path("README.md").read_text(encoding="utf-8")
+          readme = re.sub(r'(?<=<!--EVENT_COUNT-->)\d+(?=<!--/EVENT_COUNT-->)', str(count), readme)
+          readme = re.sub(r'(?<=<!--YEAR_START-->)\d+(?=<!--/YEAR_START-->)', year_start, readme)
+          readme = re.sub(r'(?<=<!--YEAR_END-->)\d+(?=<!--/YEAR_END-->)', year_end, readme)
+          Path("README.md").write_text(readme, encoding="utf-8")
+          print(f"README updated: {count} events, {year_start}–{year_end}")
+          EOF
+
       - name: Check if new events were found
         id: check
         run: |
