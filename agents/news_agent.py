@@ -22,8 +22,8 @@ EVENTS_FILE = REPO_ROOT / "data" / "events.json"
 OUTPUT_FILE = REPO_ROOT / "data" / "events.json"
 
 # ─── constants ────────────────────────────────────────────────────────────────
-MODEL = "claude-opus-4-6"
-MAX_TOKENS = 8000
+MODEL = "claude-sonnet-4-6"
+MAX_TOKENS = 4096
 
 # ─── system prompt ────────────────────────────────────────────────────────────
 SYSTEM_PROMPT = """\
@@ -113,7 +113,6 @@ def run_agent(target_date: date, existing_events: list[dict]) -> list[dict]:
     response = client.messages.create(
         model=MODEL,
         max_tokens=MAX_TOKENS,
-        thinking={"type": "adaptive"},
         system=SYSTEM_PROMPT,
         tools=[{"type": "web_search_20260209", "name": "web_search"}],
         messages=[{"role": "user", "content": user_prompt}],
