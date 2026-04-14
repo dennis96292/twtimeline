@@ -50,9 +50,8 @@ jobs:
           year_end   = max(e["date"][:4] for e in data)
 
           readme = Path("README.md").read_text(encoding="utf-8")
-          readme = re.sub(r'(?<=<!--EVENT_COUNT-->)\d+(?=<!--/EVENT_COUNT-->)', str(count), readme)
-          readme = re.sub(r'(?<=<!--YEAR_START-->)\d+(?=<!--/YEAR_START-->)', year_start, readme)
-          readme = re.sub(r'(?<=<!--YEAR_END-->)\d+(?=<!--/YEAR_END-->)', year_end, readme)
+          readme = re.sub(r'(badge/events-)\d+(-FF6B00)', rf'\g<1>{count}\2', readme)
+          readme = re.sub(r'(badge/)\d+(%E2%80%93)\d+(-timeline)', rf'\g<1>{year_start}\2{year_end}\3', readme)
           Path("README.md").write_text(readme, encoding="utf-8")
           print(f"README updated: {count} events, {year_start}–{year_end}")
           EOF
