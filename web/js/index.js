@@ -42,11 +42,15 @@ function buildRow(ev, side, staggerIdx) {
   const card = document.createElement('div');
   card.className = 'ev-card';
   card.style.setProperty('--stagger', `${staggerIdx * 80}ms`);
+  const sourceHtml = ev.source_url
+    ? `<div class="c-source"><a href="${ev.source_url}" target="_blank" rel="noopener noreferrer">📰 新聞來源</a></div>`
+    : '';
   card.innerHTML = `
     <div class="c-date">${fmtDate(ev.date)}　${fmtRoc(ev.date)}</div>
     <div class="c-title">${ev.title}</div>
     <div class="c-desc">${ev.desc || ''}</div>
-    <div class="c-tags">${(ev.tags || []).map(t => `<span class="c-tag">${t}</span>`).join('')}</div>`;
+    <div class="c-tags">${(ev.tags || []).map(t => `<span class="c-tag">${t}</span>`).join('')}</div>
+    ${sourceHtml}`;
   cardWrap.appendChild(card);
 
   if (side === 'left') {

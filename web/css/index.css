@@ -430,6 +430,24 @@ header p {
   box-shadow: 0 0 8px rgba(255,107,0,.4);
 }
 
+.ev-card .c-source {
+  margin-top: .5rem;
+}
+.ev-card .c-source a {
+  font-size: .72rem;
+  color: var(--orange-dim);
+  text-decoration: none;
+  letter-spacing: .05em;
+  transition: color .2s, text-shadow .2s;
+  display: inline-flex;
+  align-items: center;
+  gap: .25rem;
+}
+.ev-card .c-source a:hover {
+  color: var(--orange-br);
+  text-shadow: 0 0 8px rgba(255,107,0,.4);
+}
+
 .ev-card.is-visible {
   opacity: 1;
   transform: translateY(0) scale(1);
