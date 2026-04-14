@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Daily Taiwan History Web Search Agent
-======================================
-Uses Claude Opus 4.6 + web_search to find major Taiwan events from the past 48 hours,
+Taiwan History Web Search Agent (runs every 3 days)
+=====================================================
+Uses Claude Sonnet 4.6 + web_search to find major Taiwan events from the past 72 hours,
 cross-verify them, and append qualifying events to data/events.json.
 
 Curation standard: 寧缺勿濫 — only true historical landmarks, not routine news.
@@ -58,11 +58,12 @@ SYSTEM_PROMPT = """\
 - 5–6：重要但非里程碑（不收錄）
 - 1–4：例行或地方性（不收錄）
 
-## 搜尋策略
-1. 先廣泛搜尋過去48小時台灣重大新聞
-2. 對每個候選事件，至少用2個不同來源交叉驗證
+## 搜尋策略（節省成本：總搜尋次數控制在 10 次以內）
+1. 先用 1–2 次搜尋廣泛瀏覽過去72小時台灣重大新聞
+2. 只對真正有機會入選（初步判斷 ≥7 分）的事件才做交叉驗證（1 次即可）
 3. 優先選擇：BBC中文、自由時報、聯合報、中央社、公視新聞
 4. 確認消息屬實後，找到最具代表性的一個新聞連結作為 source_url
+5. 發現事件明顯不夠格，直接跳過，不再搜尋
 
 ## 輸出格式
 完成搜尋後，輸出 JSON 陣列（若無符合事件則輸出空陣列 []）：
@@ -85,12 +86,13 @@ SYSTEM_PROMPT = """\
 
 # ─── user prompt ──────────────────────────────────────────────────────────────
 def build_user_prompt(target_date: date, existing_titles: set[str]) -> str:
-    start_date = target_date - timedelta(days=1)
+    start_date = target_date - timedelta(days=3)
     recent_titles = "\n".join(f"- {t}" for t in sorted(existing_titles)[-30:])
     return f"""\
 今天是 {target_date.isoformat()}（台灣時間）。
 
 請搜尋 {start_date.isoformat()} 至 {target_date.isoformat()} 期間台灣發生的重大事件。
+注意：請節省搜尋次數，總計不超過 10 次 web_search。
 
 【已收錄的近期事件（請勿重複）】
 {recent_titles}

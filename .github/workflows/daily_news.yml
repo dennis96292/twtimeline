@@ -2,8 +2,8 @@ name: Daily Taiwan History Agent
 
 on:
   schedule:
-    # 14:00 UTC = 22:00 Taiwan time (UTC+8)
-    - cron: '0 14 * * *'
+    # 14:00 UTC = 22:00 Taiwan time (UTC+8), every 3 days
+    - cron: '0 14 */3 * *'
   workflow_dispatch:
     inputs:
       target_date:
