@@ -4,8 +4,8 @@
 
 **Taiwan Historical Events Timeline**
 
-[![Events](https://img.shields.io/badge/events-583-FF6B00?style=flat-square&labelColor=1e1e1e)](https://dennis96292.github.io/twtimeline/)
-[![Range](https://img.shields.io/badge/1895%E2%80%932026-timeline-FF8C33?style=flat-square&labelColor=1e1e1e)](https://dennis96292.github.io/twtimeline/)
+[![Events](https://img.shields.io/badge/events-584-FF6B00?style=flat-square&labelColor=1e1e1e)](https://dennis96292.github.io/twtimeline/)
+[![Range](https://img.shields.io/badge/189526-timeline-FF8C33?style=flat-square&labelColor=1e1e1e)](https://dennis96292.github.io/twtimeline/)
 [![Auto Update](https://img.shields.io/badge/auto--update-every%203%20days-994000?style=flat-square&labelColor=1e1e1e)](/.github/workflows/daily_news.yml)
 
 **[→ 線上瀏覽](https://dennis96292.github.io/twtimeline/)**
