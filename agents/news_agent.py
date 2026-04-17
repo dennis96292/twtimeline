@@ -259,7 +259,7 @@ def main():
     pr_body_file = REPO_ROOT / "agents" / ".pr_body.md"
     lines = [
         f"## 自動新增台灣重大事件 ({target_date.isoformat()})\n",
-        "以下事件由 Claude Opus 4.6 + web_search 搜尋並驗證，符合「寧缺勿濫」收錄標準（評分 ≥ 7/10）。\n",
+        "以下事件由 Claude Sonnet 4.6 + web_search 搜尋並驗證，符合「寧缺勿濫」收錄標準（評分 ≥ 7/10）。\n",
         "**請人工審查後合併，如有疑義請關閉此 PR 並加上 `rejected` 標籤。**\n\n",
         "### 新增事件\n",
     ]
