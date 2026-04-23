@@ -20,6 +20,98 @@ function fmtRoc(dateStr) {
   return `民國${parseInt(y) - 1911}年${parseInt(m)}月${parseInt(d)}日`;
 }
 
+const OUTLET_PROFILES = {
+  '中央社':       { color: '#005aab', host: 'cna.com.tw' },
+  '自由時報':     { color: '#00704a', host: 'ltn.com.tw' },
+  '聯合新聞網':   { color: '#c8102e', host: 'udn.com' },
+  '聯合報':       { color: '#c8102e', host: 'udn.com' },
+  '中時新聞網':   { color: '#d14124', host: 'chinatimes.com' },
+  '三立新聞網':   { color: '#e60012', host: 'setn.com' },
+  'TVBS新聞網':   { color: '#ff6600', host: 'tvbs.com.tw' },
+  '東森新聞':     { color: '#005bac', host: 'ebc.net.tw' },
+  'ETtoday':      { color: '#8a2be2', host: 'ettoday.net' },
+  '風傳媒':       { color: '#008b8b', host: 'storm.mg' },
+  '公視新聞':     { color: '#0066cc', host: 'pts.org.tw' },
+  '民視新聞':     { color: '#1fa64e', host: 'ftvnews.com.tw' },
+  '華視新聞':     { color: '#003366', host: 'cts.com.tw' },
+  '關鍵評論網':   { color: '#f0a500', host: 'thenewslens.com' },
+  '報導者':       { color: '#111111', host: 'twreporter.org' },
+  '鏡週刊':       { color: '#c89a3d', host: 'mirrormedia.mg' },
+  '蘋果新聞網':   { color: '#e50012', host: 'tw.nextapple.com' },
+  '新頭殼':       { color: '#e4003a', host: 'newtalk.tw' },
+  'Newtalk':      { color: '#e4003a', host: 'newtalk.tw' },
+  'BBC':          { color: '#bb1919', host: 'bbc.com' },
+  'Reuters':      { color: '#ff8000', host: 'reuters.com' },
+  'CNN':          { color: '#cc0000', host: 'cnn.com' },
+  '紐約時報':     { color: '#111111', host: 'nytimes.com' },
+  'Japan Times':  { color: '#1a1a1a', host: 'japantimes.co.jp' },
+  '維基百科':     { color: '#666666', host: 'wikipedia.org' },
+};
+
+function outletFromUrl(url) {
+  if (!url) return '來源';
+  for (const [name, info] of Object.entries(OUTLET_PROFILES)) {
+    if (url.includes(info.host)) return name;
+  }
+  return '來源';
+}
+
+function outletColor(outlet) {
+  return (OUTLET_PROFILES[outlet] && OUTLET_PROFILES[outlet].color) || '#FF6B00';
+}
+
+function outletInitial(outlet) {
+  const match = outlet.match(/[A-Za-z]/);
+  return match ? match[0].toUpperCase() : outlet.charAt(0);
+}
+
+function normalizeSource(s, fallbackTitle) {
+  if (typeof s === 'string') {
+    return { outlet: outletFromUrl(s), title: fallbackTitle, url: s };
+  }
+  return {
+    outlet: s.outlet || outletFromUrl(s.url || ''),
+    title: s.title || fallbackTitle,
+    url: s.url || '#',
+  };
+}
+
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function buildSourceColumn(ev, side) {
+  const col = document.createElement('div');
+  col.className = `ev-src-col ev-src-col-${side}`;
+  let rawSources = Array.isArray(ev.sources) ? ev.sources : [];
+  // Fallback: legacy single-URL field from automated news agent
+  if (!rawSources.length && ev.source_url) rawSources = [ev.source_url];
+  if (!rawSources.length) return col;
+
+  rawSources.forEach(s => {
+    const src = normalizeSource(s, ev.title);
+    const item = document.createElement('a');
+    item.className = 'ev-src-item';
+    item.href = src.url;
+    item.target = '_blank';
+    item.rel = 'noopener noreferrer';
+    item.innerHTML = `
+      <div class="ev-src-logo" style="background:${outletColor(src.outlet)}">${escapeHtml(outletInitial(src.outlet))}</div>
+      <div class="ev-src-body">
+        <div class="ev-src-meta">${escapeHtml(src.outlet)}</div>
+        <div class="ev-src-headline">${escapeHtml(src.title)}</div>
+      </div>`;
+    col.appendChild(item);
+  });
+
+  return col;
+}
+
 function buildRow(ev, side, staggerIdx) {
   const row = document.createElement('div');
   row.className = `ev-row side-${side}`;
@@ -42,26 +134,27 @@ function buildRow(ev, side, staggerIdx) {
   const card = document.createElement('div');
   card.className = 'ev-card';
   card.style.setProperty('--stagger', `${staggerIdx * 80}ms`);
-  const sourceHtml = ev.source_url
-    ? `<div class="c-source"><a href="${ev.source_url}" target="_blank" rel="noopener noreferrer">📰 新聞來源</a></div>`
-    : '';
   card.innerHTML = `
     <div class="c-date">${fmtDate(ev.date)}　${fmtRoc(ev.date)}</div>
     <div class="c-title">${ev.title}</div>
     <div class="c-desc">${ev.desc || ''}</div>
-    <div class="c-tags">${(ev.tags || []).map(t => `<span class="c-tag">${t}</span>`).join('')}</div>
-    ${sourceHtml}`;
-  cardWrap.appendChild(card);
+    <div class="c-tags">${(ev.tags || []).map(t => `<span class="c-tag">${t}</span>`).join('')}</div>`;
+
+  const srcCol = buildSourceColumn(ev, side);
 
   if (side === 'left') {
-    cardWrap.className = 'ev-left-card';
+    cardWrap.className = 'ev-card-wrap ev-left-card';
     yearDiv.className  = 'ev-year ev-left-year';
+    cardWrap.appendChild(srcCol);
+    cardWrap.appendChild(card);
     row.appendChild(cardWrap);
     row.appendChild(nodeDiv);
     row.appendChild(yearDiv);
   } else {
-    cardWrap.className = 'ev-right-card';
+    cardWrap.className = 'ev-card-wrap ev-right-card';
     yearDiv.className  = 'ev-year ev-right-year';
+    cardWrap.appendChild(card);
+    cardWrap.appendChild(srcCol);
     row.appendChild(yearDiv);
     row.appendChild(nodeDiv);
     row.appendChild(cardWrap);
