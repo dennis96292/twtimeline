@@ -881,8 +881,13 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "2025年台灣正式邁入超高齡社會 新生兒數再創新低 | 生活",
+        "title": "2025年台灣正式邁入超高齡社會 新生兒數再創新低",
         "url": "https://www.cna.com.tw/news/ahel/202601090067.aspx"
+      },
+      {
+        "outlet": "聯合新聞網",
+        "title": "2025新生兒再創新低 陳時中：持續精進政策促生育",
+        "url": "https://udn.com/news/story/7266/9255789"
       }
     ]
   },
@@ -1389,8 +1394,23 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "核三重啟公投案投票率29.53%史上第3低 同意票破7成未過門檻 | 政治",
+        "title": "核三重啟公投案投票率29.53%史上第3低 同意票破7成未過門檻",
         "url": "https://www.cna.com.tw/news/aipl/202508230199.aspx"
+      },
+      {
+        "outlet": "聯合新聞網",
+        "title": "整理／藍委7仙過海 重啟核三未通過！823罷免併公投開票結果看這裡",
+        "url": "https://udn.com/news/story/124323/8937503"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "罷免連二敗衝擊明年市長、議員選舉 蔡其昌、何欣純這樣說…",
+        "url": "https://news.ltn.com.tw/news/politics/breakingnews/5154104"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "馬文君罷免未過 All罷馬：南投人創造歷史新頁 草根力量持續前行",
+        "url": "https://news.ltn.com.tw/news/politics/breakingnews/5154008"
       }
     ]
   },
