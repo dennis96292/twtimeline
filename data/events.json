@@ -3103,8 +3103,13 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "颱風小犬籠罩蘭嶼陣風逾17級吹壞風速計 破台灣126年紀錄 | 地方",
+        "title": "颱風小犬籠罩蘭嶼陣風逾17級吹壞風速計 破台灣126年紀錄",
         "url": "https://www.cna.com.tw/news/aloc/202310050015.aspx"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "小犬真的凶！吹壞蘭嶼氣象站風速計 狂颳台灣史上最強陣風",
+        "url": "https://news.ltn.com.tw/news/life/breakingnews/4448879"
       }
     ]
   },
@@ -3223,8 +3228,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "颱風海葵結構紮實午後登陸台東 估4日傍晚台灣本島脫離暴風圈 | 生活",
+        "title": "颱風海葵結構紮實午後登陸台東 估4日傍晚台灣本島脫離暴風圈",
         "url": "https://www.cna.com.tw/news/ahel/202309030014.aspx"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "颱風海葵／今清晨二次登陸 南部東部等地仍須防強風豪雨",
+        "url": "https://news.pts.org.tw/article/654559"
+      },
+      {
+        "outlet": "鏡週刊",
+        "title": "海葵颱風觸陸！預計下午從台東登陸 今明各地嚴防強風豪雨",
+        "url": "https://www.mirrormedia.mg/story/20230903edi001/"
       }
     ]
   },
@@ -3260,6 +3275,16 @@
         "outlet": "聯合新聞網",
         "title": "台灣碳權交易所成立",
         "url": "https://udn.com/news/story/7238/7353769"
+      },
+      {
+        "outlet": "總統府",
+        "title": "臺灣碳權交易所揭牌 總統：持續協助企業面對淨零轉型 把低碳、零碳的挑戰化為新的機會與商機",
+        "url": "https://www.president.gov.tw/News/27785"
+      },
+      {
+        "outlet": "行政院",
+        "title": "臺灣碳權交易所正式揭牌 陳揆：完善國內碳權交易市場 逐步邁向淨零轉型目標",
+        "url": "https://www.ey.gov.tw/Page/9277F759E41CCD91/cb41025b-1dbf-429b-80a9-d5c08d50d6f1"
       }
     ]
   },
@@ -3305,6 +3330,16 @@
         "outlet": "公視新聞",
         "title": "性平三法修法三讀通過 權勢性騷雇主最重罰百萬",
         "url": "https://news.pts.org.tw/article/648902"
+      },
+      {
+        "outlet": "報導者",
+        "title": "#MeToo催生新版性平三法：5大修訂重點更有助被害人嗎？是否有漏洞？",
+        "url": "https://www.twreporter.org/a/taiwan-metoo-amendment"
+      },
+      {
+        "outlet": "端傳媒",
+        "title": "解讀台灣新版性平三法：修法有哪些重點，還有什麼未竟之業？",
+        "url": "https://theinitium.com/article/20230809-taiwan-metoo-amendment"
       }
     ]
   },
