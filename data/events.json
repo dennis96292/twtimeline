@@ -1676,8 +1676,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "三峽重大車禍3死12傷事件彙整 78歲駕駛闖紅燈高速衝撞學生行人 | 社會",
+        "title": "三峽重大車禍3死12傷事件彙整 78歲駕駛闖紅燈高速衝撞學生行人",
         "url": "https://www.cna.com.tw/news/asoc/202505190345.aspx"
+      },
+      {
+        "outlet": "聯合新聞網",
+        "title": "三峽78歲翁駕車暴衝釀3死12傷 肇事原因待查",
+        "url": "https://udn.com/news/story/124499/8750908"
+      },
+      {
+        "outlet": "TVBS新聞網",
+        "title": "三峽車禍學童死傷狀況曝 4學生ICU與死神搏鬥、5歲童出院",
+        "url": "https://news.tvbs.com.tw/politics/2875804"
       }
     ]
   },
@@ -1786,8 +1796,23 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "剴剴案保母姊妹遭判無期、18年徒刑 北院：以虐取樂惡性重大 | 社會",
+        "title": "剴剴案保母姊妹遭判無期、18年徒刑 北院：以虐取樂惡性重大",
         "url": "https://www.cna.com.tw/news/asoc/202505130179.aspx"
+      },
+      {
+        "outlet": "聯合新聞網",
+        "title": "剴剴凌虐致死案 保母劉彩萱判無期徒刑、劉若琳判刑18年",
+        "url": "https://udn.com/news/story/124487/8736551"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "剴剴遭保母姊妹虐死案宣判 姊姊無期徒刑、妹妹判刑18年",
+        "url": "https://news.pts.org.tw/article/750931"
+      },
+      {
+        "outlet": "聯合新聞網",
+        "title": "剴剴案重判 外婆委任律師：嚴厲警告潛在虐童者",
+        "url": "https://udn.com/news/story/7315/8737751"
       }
     ]
   },
@@ -1840,8 +1865,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "蔡明彥：海峽雷霆-2025A展現共軍整肅內部仍能演習 | 政治",
+        "title": "蔡明彥：海峽雷霆-2025A展現共軍整肅內部仍能演習",
         "url": "https://www.cna.com.tw/news/aipl/202504090168.aspx"
+      },
+      {
+        "outlet": "中央社",
+        "title": "中共海峽雷霆-2025A軍演 東海實彈射擊",
+        "url": "https://www.cna.com.tw/news/acn/202504020058.aspx"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "中國軍演還沒完！「海峽雷霆-2025A」今展開 鎖定海峽中南部",
+        "url": "https://def.ltn.com.tw/article/breakingnews/4999106"
       }
     ]
   },
@@ -1906,8 +1941,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "賴總統：因應中國滲透與間諜威脅 恢復軍事審判制度 | 政治",
+        "title": "賴總統：因應中國滲透與間諜威脅 恢復軍事審判制度",
         "url": "https://www.cna.com.tw/news/aipl/202503135004.aspx"
+      },
+      {
+        "outlet": "中央社",
+        "title": "賴總統宣布恢復軍事審判 國防部下午4時記者會說明",
+        "url": "https://www.cna.com.tw/news/aipl/202503130194.aspx"
+      },
+      {
+        "outlet": "ETtoday",
+        "title": "快訊／賴清德宣布「恢復軍事審判」 軍法官回到第一線",
+        "url": "https://www.ettoday.net/news/20250313/2924657.htm"
       }
     ]
   },
@@ -1923,8 +1968,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "台積電擴大對美投資至少1000億美元蓋新廠 川普：可避免關稅 | 國際",
+        "title": "台積電擴大對美投資至少1000億美元蓋新廠 川普：可避免關稅",
         "url": "https://www.cna.com.tw/news/aopl/202503040013.aspx"
+      },
+      {
+        "outlet": "鉅亨網",
+        "title": "台積電承諾投資千億美元爭取時間 美國廠量產後僅占營收1/3",
+        "url": "https://news.cnyes.com/news/id/5920273"
+      },
+      {
+        "outlet": "聯合新聞網",
+        "title": "解讀台積電擴大美國投資：變成「美積電」的擔憂有無必要？台灣矽盾何去何從？",
+        "url": "https://global.udn.com/global_vision/story/8663/8599895"
       }
     ]
   },
@@ -2062,8 +2117,23 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "死囚黃麟凱槍決伏法 法務部舉4執行理由：情節最嚴重犯行 | 社會",
+        "title": "死囚黃麟凱槍決伏法 法務部舉4執行理由：情節最嚴重犯行",
         "url": "https://www.cna.com.tw/news/asoc/202501170003.aspx"
+      },
+      {
+        "outlet": "中央社",
+        "title": "法務部執行死囚黃麟凱槍決 民團：違法執行無異恣意殺人",
+        "url": "https://www.cna.com.tw/news/asoc/202501160358.aspx"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "賴清德政府上任後首度執行死刑 法務部證實：黃麟凱於22:02遭槍決伏法",
+        "url": "https://news.pts.org.tw/article/734022"
+      },
+      {
+        "outlet": "端傳媒",
+        "title": "賴政府上台後首槍決，死囚黃麟凱成死刑釋憲後第一案",
+        "url": "https://theinitium.com/article/20250117-whatsnew-taiwan-death-penalty"
       }
     ]
   },
