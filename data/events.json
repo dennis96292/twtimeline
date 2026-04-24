@@ -2296,8 +2296,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "柯文哲羈押禁見 北院裁定理由：明知違法仍執意為之 | 社會",
+        "title": "柯文哲羈押禁見 北院裁定理由：明知違法仍執意為之",
         "url": "https://www.cna.com.tw/news/asoc/202409050315.aspx"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "柯文哲涉京華城案遭羈押禁見 收押期限多久？抗告可以提幾次？",
+        "url": "https://news.pts.org.tw/article/713583"
+      },
+      {
+        "outlet": "商業周刊",
+        "title": "京華城案懶人包：柯文哲遭羈押禁見！爭議、重點時間軸一次看",
+        "url": "https://www.businessweekly.com.tw/focus/blog/3016587"
       }
     ]
   },
@@ -2330,8 +2340,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "台股崩跌1807點失守2萬 跌點與跌幅皆創歷年新高 | 證券",
+        "title": "台股崩跌1807點失守2萬 跌點與跌幅皆創歷年新高",
         "url": "https://www.cna.com.tw/news/afe/202408050135.aspx"
+      },
+      {
+        "outlet": "聯合新聞網",
+        "title": "圖表看時事／黑色星期一亞洲股災…台股暴跌1807點創紀錄 圖解台史上重大股災",
+        "url": "https://udn.com/news/story/6904/8142469"
+      },
+      {
+        "outlet": "鉅亨網",
+        "title": "2024台股刷榜年 包辦史上前五大跌點、六大漲點紀錄、歷史新高24416",
+        "url": "https://news.cnyes.com/news/id/5816715"
       }
     ]
   },
@@ -2343,12 +2363,27 @@
       "政治",
       "社會"
     ],
-    "source_url": "https://www.cna.com.tw/news/asoc/202407260124.aspx",
+    "source_url": "https://www.cna.com.tw/news/asoc/202407260160.aspx",
     "sources": [
       {
         "outlet": "中央社",
-        "title": "颱風凱米釀災 立委促全力協助農漁民 | 政治",
-        "url": "https://www.cna.com.tw/news/asoc/202407260124.aspx"
+        "title": "高虹安貪污判7年4月 法院：詐助理費11萬餘元",
+        "url": "https://www.cna.com.tw/news/asoc/202407260160.aspx"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "國民黨立委顏寬恒被控貪污、偽造文書等3案 一審判刑合計8年4月",
+        "url": "https://news.ltn.com.tw/news/politics/breakingnews/4748855"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "新竹市長高虹安詐領助理費 一審判7年4個月、褫奪公權4年",
+        "url": "https://news.pts.org.tw/article/706749"
+      },
+      {
+        "outlet": "菱傳媒",
+        "title": "顏寬恒、高虹安詐助理費算重判嗎？一張圖表帶你看懂判決眉角",
+        "url": "https://rwnews.tw/article.php?news=16492"
       }
     ]
   },
@@ -2365,8 +2400,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "颱風凱米來襲24日21縣市颱風假 全台停班課一覽 | 生活",
+        "title": "颱風凱米來襲24日21縣市颱風假 全台停班課一覽",
         "url": "https://www.cna.com.tw/news/ahel/202407235003.aspx"
+      },
+      {
+        "outlet": "遠見雜誌",
+        "title": "颱風動態最新路徑：凱米颱風假停班停課範圍擴大，全台僅1縣市上班上課",
+        "url": "https://www.gvm.com.tw/article/114506"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "颱風凱米／中南部估仍持續降雨 7/26各縣市停班課一次看",
+        "url": "https://news.pts.org.tw/article/706212"
       }
     ]
   },
@@ -2659,8 +2704,18 @@
     "sources": [
       {
         "outlet": "自由時報",
-        "title": "花蓮強震》芮氏規模7.2 全台有感 花蓮震度7級 - 生活",
+        "title": "花蓮強震》芮氏規模7.2 全台有感 花蓮震度7級",
         "url": "https://news.ltn.com.tw/news/life/breakingnews/4628206"
+      },
+      {
+        "outlet": "報導者",
+        "title": "規模7.2的403花蓮地震18死逾千傷、逆衝斷層向北破裂，3天內慎防較大餘震",
+        "url": "https://www.twreporter.org/a/taiwan-0403earthquake"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "403地震各地震度幾級？解析921地震後最大規模強震，餘震超過700起",
+        "url": "https://ourisland.pts.org.tw/content/10684"
       }
     ]
   },
