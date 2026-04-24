@@ -3006,8 +3006,13 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "最低工資法三讀 勞部：保障基層勞工生活水準 | 生活",
+        "title": "最低工資法三讀 勞部：保障基層勞工生活水準",
         "url": "https://www.cna.com.tw/news/ahel/202312120096.aspx"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "《最低工資法》三讀通過 違法業主最高可罰150萬",
+        "url": "https://news.pts.org.tw/article/670966"
       }
     ]
   },
@@ -3317,6 +3322,16 @@
         "outlet": "公視新聞",
         "title": "新北板橋幼兒園餵藥案偵結 9教保員證據不足不起訴",
         "url": "https://news.pts.org.tw/article/645929"
+      },
+      {
+        "outlet": "鏡週刊",
+        "title": "新北幼兒園遭爆「餵小朋友安眠藥」 累計10案全園採檢！教育局回應了",
+        "url": "https://www.mirrormedia.mg/story/20230605edi029/"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "新北幼兒園餵藥案 毒理專家招名威分析「巴比妥」對幼童恐怖影響",
+        "url": "https://news.ltn.com.tw/news/life/breakingnews/4328327"
       }
     ]
   },
@@ -3333,8 +3348,13 @@
     "sources": [
       {
         "outlet": "自由時報",
-        "title": "建案吊臂砸穿中捷列車 釀1死10傷 - 社會",
+        "title": "建案吊臂砸穿中捷列車 釀1死10傷",
         "url": "https://news.ltn.com.tw/news/society/breakingnews/4296975"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "中捷事故1死8傷 車廂內慘況搶救畫面曝光",
+        "url": "https://news.ltn.com.tw/news/society/breakingnews/4297351"
       }
     ]
   },
