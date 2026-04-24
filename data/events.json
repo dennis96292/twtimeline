@@ -2323,8 +2323,13 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "京華城案沈慶京應曉薇涉貪遭聲押 北院晚間開庭 | 社會",
+        "title": "京華城案沈慶京應曉薇涉貪遭聲押 北院晚間開庭",
         "url": "https://www.cna.com.tw/news/asoc/202408290399.aspx"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "京華城弊案》應曉薇涉收沈慶京4500萬賄款 成檢方聲押關鍵",
+        "url": "https://news.ltn.com.tw/news/Taipei/breakingnews/4783558"
       }
     ]
   },
@@ -2427,8 +2432,23 @@
     "sources": [
       {
         "outlet": "自由時報",
-        "title": "鄭文燦涉貪案重開羈押庭 桃院裁定1200萬交保境管 - 政治",
+        "title": "鄭文燦涉貪案重開羈押庭 桃院裁定1200萬交保境管",
         "url": "https://news.ltn.com.tw/news/politics/breakingnews/4730907"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "鄭文燦第三度羈押庭結果出爐 桃園地院逆轉裁定羈押禁見",
+        "url": "https://news.pts.org.tw/article/704456"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "鄭文燦收押》桃園看守所 歷來最大咖",
+        "url": "https://news.ltn.com.tw/news/politics/paper/1656183"
+      },
+      {
+        "outlet": "中央社",
+        "title": "鄭文燦涉貪羈押禁見2個月確定 高等法院駁回抗告",
+        "url": "https://www.cna.com.tw/news/aipl/202407125006.aspx"
       }
     ]
   },
@@ -2658,8 +2678,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "公然侮辱罪釋憲案 憲法法庭判合憲但限縮範圍 | 社會",
+        "title": "公然侮辱罪釋憲案 憲法法庭判合憲但限縮範圍",
         "url": "https://www.cna.com.tw/news/asoc/202404260194.aspx"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "公然侮辱罪侵害言論自由應除罪？憲法法庭判決「合憲但應加以限縮」",
+        "url": "https://news.ltn.com.tw/news/society/breakingnews/4654097"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "公然侮辱罪侵害言論自由？ 憲法法庭：合憲但限縮適用範圍",
+        "url": "https://news.pts.org.tw/article/692370"
       }
     ]
   },
