@@ -999,8 +999,18 @@
     "sources": [
       {
         "outlet": "聯合新聞網",
-        "title": "2025封關日台股成功衝上2萬9！全年漲幅逾25％ 台積市值破40兆 | 股市要聞 | 股市",
+        "title": "2025封關日台股成功衝上2萬9！全年漲幅逾25％ 台積市值破40兆",
         "url": "https://udn.com/news/story/7251/9237013"
+      },
+      {
+        "outlet": "今周刊",
+        "title": "台股封關見29006點、台積電1550元，投資人平均賺145萬！外資賣6千億也賣不倒？最強買盤曝光",
+        "url": "https://www.businesstoday.com.tw/article/category/183008/post/202512310015/"
+      },
+      {
+        "outlet": "客新聞",
+        "title": "台股封關創新高 全年漲近6千點 每戶股民平均賺149萬",
+        "url": "https://hakkanews.tw/2025/12/31/251371/"
       }
     ]
   },
@@ -1161,8 +1171,23 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "美國對台8項軍售逾111億美元 國防部表達誠摯感謝 | 政治",
+        "title": "美國對台8項軍售逾111億美元 國防部表達誠摯感謝",
         "url": "https://www.cna.com.tw/news/aipl/202512180020.aspx"
+      },
+      {
+        "outlet": "聯合新聞網",
+        "title": "美宣布逾3500億對台軍售 海馬士打擊系統金額最高",
+        "url": "https://udn.com/news/story/10930/9210595"
+      },
+      {
+        "outlet": "TVBS新聞網",
+        "title": "含M109A7自走砲、海馬士！美再宣布對台軍售3500億 項目曝",
+        "url": "https://news.tvbs.com.tw/world/3075734"
+      },
+      {
+        "outlet": "華視新聞",
+        "title": "美對台逾百億美元軍售！ M109A7自走砲.海馬士受關注",
+        "url": "https://news.cts.com.tw/cts/general/202512/202512182545179.html"
       }
     ]
   },
@@ -1201,8 +1226,23 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "川普簽署國防授權法 含軍援台灣最高10億美元 | 政治",
+        "title": "川普簽署國防授權法 含軍援台灣最高10億美元",
         "url": "https://www.cna.com.tw/news/aipl/202512190038.aspx"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "挹注台灣安全！川普簽署「國防授權法案」含軍援台灣最高10億美元",
+        "url": "https://news.ltn.com.tw/news/politics/breakingnews/5283141"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "川普簽署國防授權法案 援台10億美元",
+        "url": "https://news.ltn.com.tw/news/world/paper/1736583"
+      },
+      {
+        "outlet": "聯合新聞網",
+        "title": "美參議院通過9010億美元2026國防授權法 川普將簽署生效",
+        "url": "https://udn.com/news/story/10930/9210459"
       }
     ]
   },
@@ -1277,8 +1317,23 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "普發現金更近了 立院送出韌性特別預算待總統公布 | 政治",
+        "title": "普發現金更近了 立院送出韌性特別預算待總統公布",
         "url": "https://www.cna.com.tw/news/aipl/202510230219.aspx"
+      },
+      {
+        "outlet": "中央社",
+        "title": "普發現金1萬來了 總統公布韌性特別預算",
+        "url": "https://www.cna.com.tw/news/aipl/202510230319.aspx"
+      },
+      {
+        "outlet": "聯合新聞網",
+        "title": "領1萬元腳步近了！賴總統今晚公布普發現金特別預算",
+        "url": "https://udn.com/news/story/6656/9092961"
+      },
+      {
+        "outlet": "台視新聞",
+        "title": "普發1萬要來了！總統府正式公告韌性特別預算案",
+        "url": "https://news.ttv.com.tw/news/11410230003300W"
       }
     ]
   },
@@ -1378,6 +1433,11 @@
         "outlet": "鏡報",
         "title": "今為台灣「民主換日線」 解嚴天數超越戒嚴時間",
         "url": "https://www.mirrordaily.news/story/19592"
+      },
+      {
+        "outlet": "中天新聞網",
+        "title": "民進黨賀「台灣解嚴天數正式超越戒嚴」遭網友灌爆：之前不是挺韓國？",
+        "url": "https://tw.news.yahoo.com/%E6%B0%91%E9%80%B2%E9%BB%A8%E8%B3%80-%E5%8F%B0%E7%81%A3%E8%A7%A3%E5%9A%B4%E5%A4%A9%E6%95%B8%E6%AD%A3%E5%BC%8F%E8%B6%85%E8%B6%8A%E6%88%92%E5%9A%B4-%E7%B6%B2%E5%82%BB%E7%9C%BC%E5%96%8A-%E4%B9%8B%E5%89%8D%E4%B8%8D%E6%98%AF%E6%8C%BA%E9%9F%93%E5%9C%8B%E6%88%92%E5%9A%B4-151232170.html"
       }
     ]
   },
@@ -1557,8 +1617,23 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "立委罷免案首波成案 中選會最快20日審定 | 政治",
+        "title": "立委罷免案首波成案 中選會最快20日審定",
         "url": "https://www.cna.com.tw/news/aipl/202506070132.aspx"
+      },
+      {
+        "outlet": "聯合新聞網",
+        "title": "名單整理包／首波罷免案7月26日投票 看24名立委在那些選區？",
+        "url": "https://udn.com/news/story/124323/8820106"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "中選會公告24+1罷免案7/26投票 通過門檻、投票規定一次看",
+        "url": "https://news.pts.org.tw/article/757142"
+      },
+      {
+        "outlet": "客新聞",
+        "title": "大罷免24+1成案 7月26日投票",
+        "url": "https://hakkanews.tw/2025/06/20/the-241-recall-was-207194/"
       }
     ]
   },
@@ -1617,8 +1692,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "黃仁勳宣布輝達海外總部落腳士林北投 北士科雀屏中選 | 產經",
+        "title": "黃仁勳宣布輝達海外總部落腳士林北投 北士科雀屏中選",
         "url": "https://www.cna.com.tw/news/afe/202505190115.aspx"
+      },
+      {
+        "outlet": "聯合新聞網",
+        "title": "整理包／一文看黃仁勳 Computex 演講亮點！輝達台灣總部落腳北士科 點名55家台廠供應鏈",
+        "url": "https://money.udn.com/money/story/5612/8750451"
+      },
+      {
+        "outlet": "TechNews 科技新報",
+        "title": "黃仁勳台北演講重點一次看，輝達蛻變 AI 基礎設施公司",
+        "url": "https://finance.technews.tw/2025/05/19/computex-2025-nvidia-brief/"
       }
     ]
   },
@@ -1669,8 +1754,23 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "核三2號機17日下午降載18日凌晨停機 台灣正式進入非核家園 | 產經",
+        "title": "核三2號機17日下午降載18日凌晨停機 台灣正式進入非核家園",
         "url": "https://www.cna.com.tw/news/afe/202505160355.aspx"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "核三廠2號機17日正式除役 卓揆：今天過後台灣沒有核電",
+        "url": "https://news.pts.org.tw/article/751629"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "核三廠2號機午夜將停機 台電：國內用電無虞",
+        "url": "https://news.pts.org.tw/article/751646"
+      },
+      {
+        "outlet": "遠見雜誌",
+        "title": "無核時代來臨！核三2號機正式停機，非核家園能撐多久？延役與公投挑戰迎面而來",
+        "url": "https://www.gvm.com.tw/article/121364"
       }
     ]
   },
