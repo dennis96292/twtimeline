@@ -3145,6 +3145,16 @@
         "outlet": "聯合新聞網",
         "title": "明揚國際工廠大火",
         "url": "https://udn.com/news/story/123754/7463090"
+      },
+      {
+        "outlet": "中央社",
+        "title": "屏東工廠爆炸7死3失蹤 續搜2樓研判失聯者被壓住",
+        "url": "https://www.cna.com.tw/news/asoc/202309230015.aspx"
+      },
+      {
+        "outlet": "報導者",
+        "title": "屏東明揚工廠爆炸24小時，4消防員殉職、98傷，揭廠房工安與消防職安缺失",
+        "url": "https://www.twreporter.org/a/pingtung-launch-tech-explosion"
       }
     ]
   },
@@ -3260,8 +3270,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "農委會升格農業部大事記 | 生活",
+        "title": "農委會升格農業部大事記",
         "url": "https://www.cna.com.tw/news/ahel/202305160045.aspx"
+      },
+      {
+        "outlet": "農業部官網",
+        "title": "農業部揭牌成立 開創臺灣農業發展新紀元",
+        "url": "https://www.moa.gov.tw/theme_data.php?theme=news&sub_theme=agri&id=9112"
+      },
+      {
+        "outlet": "鏡週刊",
+        "title": "立法院三讀「農委會升格農業部」 陳吉仲：回應農民35年前訴求",
+        "url": "https://www.mirrormedia.mg/story/20230516edi031/"
       }
     ]
   },
@@ -3381,8 +3401,23 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "馬英九訪中臨時行程更動 參觀武漢抗疫展 | 兩岸",
+        "title": "馬英九訪中臨時行程更動 參觀武漢抗疫展",
         "url": "https://www.cna.com.tw/news/acn/202303300107.aspx"
+      },
+      {
+        "outlet": "中央社",
+        "title": "馬英九3/27起赴南京上海等地 首位訪問中國卸任總統",
+        "url": "https://www.cna.com.tw/news/aipl/202303195002.aspx"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "馬英九赴中祭祖交流【完整記錄】",
+        "url": "https://news.pts.org.tw/live/641c01237283d50f9fa5f0ca"
+      },
+      {
+        "outlet": "鏡週刊",
+        "title": "馬英九本月底赴陸「祭祖」訪南京、上海等地 成74年來首位卸任總統訪中國",
+        "url": "https://www.mirrormedia.mg/story/20230319edi014/"
       }
     ]
   },
