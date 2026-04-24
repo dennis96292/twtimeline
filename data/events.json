@@ -3024,8 +3024,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "大巨蛋前世今生1／大巨蛋開大門迎萬人 32年歷史一次看 | 地方",
+        "title": "大巨蛋前世今生1／大巨蛋開大門迎萬人 32年歷史一次看",
         "url": "https://www.cna.com.tw/news/aloc/202311180020.aspx"
+      },
+      {
+        "outlet": "中央社",
+        "title": "王貞治大巨蛋開球「台灣將稱霸亞洲」世界全壘打王對寶島的野球情懷",
+        "url": "https://www.cna.com.tw/news/aspt/202312025003.aspx"
+      },
+      {
+        "outlet": "ETtoday",
+        "title": "台北大巨蛋落成很感動 王貞治預約來看中華隊比賽",
+        "url": "https://sports.ettoday.net/news/2635242"
       }
     ]
   },
@@ -3107,6 +3117,16 @@
         "outlet": "自由時報",
         "title": "首艘國造潛艦「海鯤號」今下水 以國徽包覆艦艏及魚雷管",
         "url": "https://def.ltn.com.tw/article/breakingnews/4442089"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "國造潛艦「海鯤」命名下水 蔡英文：歷史將會永遠記住這一天",
+        "url": "https://def.ltn.com.tw/article/breakingnews/4442305"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "國造潛艦原型艦「海鯤號」下水 預計明年底交艦",
+        "url": "https://news.pts.org.tw/article/659284"
       }
     ]
   },
@@ -3333,8 +3353,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "蔡麥歷史會晤 蔡英文感謝美支持、麥卡錫稱台美友誼是和平關鍵 | 政治",
+        "title": "蔡麥歷史會晤 蔡英文感謝美支持、麥卡錫稱台美友誼是和平關鍵",
         "url": "https://www.cna.com.tw/news/aipl/202304060019.aspx"
+      },
+      {
+        "outlet": "風傳媒",
+        "title": "「台灣沒有被孤立、也並不孤單！」蔡英文總統在雷根圖書館談話全文",
+        "url": "https://www.storm.mg/article/4771415"
+      },
+      {
+        "outlet": "TVBS新聞網",
+        "title": "有玄機！蔡麥會晤選雷根圖書館藏深意 蔡英文向「他」致敬",
+        "url": "https://news.tvbs.com.tw/politics/2088961"
       }
     ]
   },
@@ -3369,8 +3399,18 @@
     "sources": [
       {
         "outlet": "自由時報",
-        "title": "宏都拉斯宣布與我斷交 外交部9:30開記者會回應 - 政治",
+        "title": "宏都拉斯宣布與我斷交 外交部9:30開記者會回應",
         "url": "https://news.ltn.com.tw/news/politics/breakingnews/4251481"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "外交部宣布斷交 宏都拉斯大使昨已離台",
+        "url": "https://news.ltn.com.tw/news/politics/breakingnews/4251537"
+      },
+      {
+        "outlet": "中央社",
+        "title": "吳釗燮：宏都拉斯提3條件合計24.5億美元 直接給錢像賄賂",
+        "url": "https://www.cna.com.tw/news/aipl/202303260040.aspx"
       }
     ]
   },
