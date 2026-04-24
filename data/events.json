@@ -3255,8 +3255,18 @@
     "sources": [
       {
         "outlet": "自由時報",
-        "title": "立委任內涉詐助理費 高虹安貪污案起訴 - 政治",
+        "title": "立委任內涉詐助理費 高虹安貪污案起訴",
         "url": "https://news.ltn.com.tw/news/politics/breakingnews/4395445"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "北檢批高虹安公私不分、壓榨下屬 起訴書全文曝光",
+        "url": "https://news.ltn.com.tw/news/politics/breakingnews/4395609"
+      },
+      {
+        "outlet": "鏡週刊",
+        "title": "高虹安涉詐助理費遭北檢起訴！資策會控背信案不起訴",
+        "url": "https://www.mirrormedia.mg/story/20230814edi010/"
       }
     ]
   },
@@ -3517,8 +3527,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "二膽上兵失聯案 國防部：財務身心違常者調離離島 | 政治",
+        "title": "二膽上兵失聯案 國防部：財務身心違常者調離離島",
         "url": "https://www.cna.com.tw/news/aipl/202303140331.aspx"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "金門二膽失聯上兵傳游往中國獲救 陳玉珍：人平安在廈門",
+        "url": "https://news.ltn.com.tw/news/politics/breakingnews/4235672"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "二膽上兵陳嘉壎脫逃 金門地檢署發布通緝令",
+        "url": "https://news.pts.org.tw/article/627890"
       }
     ]
   },
@@ -3537,6 +3557,16 @@
         "outlet": "公視新聞",
         "title": "普發現金6000元特別條例 立院今三讀通過",
         "url": "https://news.pts.org.tw/article/623852"
+      },
+      {
+        "outlet": "鏡週刊",
+        "title": "普發6000要來了！立院三讀通過《疫後特別條例》 最快發放時間曝光",
+        "url": "https://www.mirrormedia.mg/story/20230221edi021"
+      },
+      {
+        "outlet": "客新聞",
+        "title": "立法院三讀特別條例 普發現金6000元再進一步",
+        "url": "https://hakkanews.tw/2023/02/21/third-reading-of-special-regulations-on-legislative-yuan-6000-in-cash/"
       }
     ]
   },
