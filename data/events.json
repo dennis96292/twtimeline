@@ -44,7 +44,29 @@
       "外交",
       "兩岸"
     ],
-    "source_url": "https://news.tvbs.com.tw/politics/3192446"
+    "source_url": "https://news.tvbs.com.tw/politics/3192446",
+    "sources": [
+      {
+        "outlet": "TVBS新聞網",
+        "title": "台巴建交69年！巴拉圭總統5/7訪台 賴清德5/8軍禮歡迎",
+        "url": "https://news.tvbs.com.tw/politics/3192446"
+      },
+      {
+        "outlet": "中央社",
+        "title": "外交部：巴拉圭總統5/7來台訪問 賴總統5/8軍禮歡迎",
+        "url": "https://www.cna.com.tw/news/aipl/202604300328.aspx"
+      },
+      {
+        "outlet": "ETtoday",
+        "title": "巴拉圭總統5/7來台國是訪問 賴清德將頒贈采玉大勳章、軍禮歡迎",
+        "url": "https://www.ettoday.net/news/20260430/3158405.htm"
+      },
+      {
+        "outlet": "新頭殼",
+        "title": "巴拉圭總統貝尼亞5月7日率團訪台 賴清德將以軍禮歡迎並頒贈采玉大勳章",
+        "url": "https://newtalk.tw/news/view/2026-04-30/1032702"
+      }
+    ]
   },
   {
     "date": "2026-04-21",
