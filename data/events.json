@@ -1,5 +1,42 @@
 [
   {
+    "date": "2026-05-02",
+    "title": "賴清德突破封鎖訪史瓦帝尼",
+    "desc": "總統賴清德原訂4月22日出訪非洲邦交國史瓦帝尼，因中國向塞席爾、模里西斯、馬達加斯加三國施壓，迫使三國臨時撤銷台灣總統專機飛航許可而暫緩。5月2日凌晨，史瓦帝尼以國王恩史瓦帝三世私人專機（前華航A340，機號3DC-SDF）秘密接送賴清德繞開中國封鎖成行，並於3日與史國國王會談並簽署聯合公報。此次「突圍出訪」被視為台灣外交突破封鎖的重要案例。",
+    "tags": [
+      "外交",
+      "兩岸"
+    ],
+    "source_url": "https://www.cna.com.tw/news/aipl/202605030021.aspx",
+    "sources": [
+      {
+        "outlet": "中央社",
+        "title": "賴總統會史瓦帝尼國王 台史簽署聯合公報深化合作",
+        "url": "https://www.cna.com.tw/news/aipl/202605030021.aspx"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "史瓦帝尼專機助賴清德突破中國封鎖 軍事專家揭來自台灣的情誼",
+        "url": "https://news.ltn.com.tw/news/politics/breakingnews/5423478"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "總統賴清德成功突圍訪史瓦帝尼 學者：中國恐加強施壓力道",
+        "url": "https://news.pts.org.tw/article/806612"
+      },
+      {
+        "outlet": "新頭殼",
+        "title": "賴清德出訪史瓦帝尼 他稱台灣成功僅需對藍白保密即可",
+        "url": "https://newtalk.tw/news/view/2026-05-03/1033002"
+      },
+      {
+        "outlet": "聯合新聞網",
+        "title": "賴總統搭史國專機出訪史瓦帝尼 美國務院：不該被政治化",
+        "url": "https://udn.com/news/story/124844/9479548"
+      }
+    ]
+  },
+  {
     "date": "2026-05-01",
     "title": "巴拉圭總統宣布國是訪台",
     "desc": "台灣外交部5月1日正式宣布，南美洲唯一邦交國巴拉圭總統潘尼亞（Santiago Peña）將於5月7日至10日率團來台進行首度國是訪問，賴清德將以軍禮歡迎並頒贈「采玉大勳章」。此宣告恰逢《紐約時報》4月30日報導巴拉圭面臨中國日益強大的外交與經濟壓力、被要求與台斷交之際，具有強烈的邦誼鞏固信號意義，為台灣在外交空間持續受壓下的重要外交里程碑。",
@@ -7,7 +44,29 @@
       "外交",
       "兩岸"
     ],
-    "source_url": "https://news.tvbs.com.tw/politics/3192446"
+    "source_url": "https://news.tvbs.com.tw/politics/3192446",
+    "sources": [
+      {
+        "outlet": "TVBS新聞網",
+        "title": "台巴建交69年！巴拉圭總統5/7訪台 賴清德5/8軍禮歡迎",
+        "url": "https://news.tvbs.com.tw/politics/3192446"
+      },
+      {
+        "outlet": "中央社",
+        "title": "外交部：巴拉圭總統5/7來台訪問 賴總統5/8軍禮歡迎",
+        "url": "https://www.cna.com.tw/news/aipl/202604300328.aspx"
+      },
+      {
+        "outlet": "ETtoday",
+        "title": "巴拉圭總統5/7來台國是訪問 賴清德將頒贈采玉大勳章、軍禮歡迎",
+        "url": "https://www.ettoday.net/news/20260430/3158405.htm"
+      },
+      {
+        "outlet": "新頭殼",
+        "title": "巴拉圭總統貝尼亞5月7日率團訪台 賴清德將以軍禮歡迎並頒贈采玉大勳章",
+        "url": "https://newtalk.tw/news/view/2026-04-30/1032702"
+      }
+    ]
   },
   {
     "date": "2026-04-21",
@@ -21,23 +80,23 @@
     "sources": [
       {
         "outlet": "聯合新聞網",
-        "title": "賴清德出訪非洲遭中國阻攔",
-        "url": "https://udn.com/news/story/124844/9456254"
+        "title": "出訪暫緩 賴總統：台史雙方情誼絲毫未減、將派特使前往慶賀",
+        "url": "https://udn.com/news/story/7238/9455634"
       },
       {
         "outlet": "中央社",
-        "title": "中東戰爭第54天》美不解封伊朗不開放海峽 最新發展一次看",
-        "url": "https://www.cna.com.tw/news/aopl/202604230095.aspx"
+        "title": "賴總統暫緩出訪史瓦帝尼 民眾黨：對中國嚴正抗議",
+        "url": "https://www.cna.com.tw/news/aipl/202604210326.aspx"
       },
       {
-        "outlet": "中央社",
-        "title": "川普下令摧毀荷莫茲海峽布雷船隻 強調美軍持續掃雷",
-        "url": "https://www.cna.com.tw/news/aopl/202604230359.aspx"
+        "outlet": "客新聞",
+        "title": "賴清德出訪遭中國打壓喊卡！外交部、各政黨、國際立場一次看",
+        "url": "https://hakkanews.tw/2026/04/22/273390/"
       },
       {
-        "outlet": "中央社",
-        "title": "中東局勢不明 美國股市開盤下跌",
-        "url": "https://www.cna.com.tw/news/afe/202604230356.aspx"
+        "outlet": "關鍵評論網",
+        "title": "賴總統出訪史瓦帝尼受阻，國際政要齊聲譴責北京，以債務利誘非洲三國封鎖領空",
+        "url": "https://www.thenewslens.com/article/266906"
       }
     ]
   },
@@ -1009,8 +1068,18 @@
     "sources": [
       {
         "outlet": "聯合新聞網",
-        "title": "2025封關日台股成功衝上2萬9！全年漲幅逾25％ 台積市值破40兆 | 股市要聞 | 股市",
+        "title": "2025封關日台股成功衝上2萬9！全年漲幅逾25％ 台積市值破40兆",
         "url": "https://udn.com/news/story/7251/9237013"
+      },
+      {
+        "outlet": "今周刊",
+        "title": "台股封關見29006點、台積電1550元，投資人平均賺145萬！外資賣6千億也賣不倒？最強買盤曝光",
+        "url": "https://www.businesstoday.com.tw/article/category/183008/post/202512310015/"
+      },
+      {
+        "outlet": "客新聞",
+        "title": "台股封關創新高 全年漲近6千點 每戶股民平均賺149萬",
+        "url": "https://hakkanews.tw/2025/12/31/251371/"
       }
     ]
   },
@@ -1171,8 +1240,23 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "美國對台8項軍售逾111億美元 國防部表達誠摯感謝 | 政治",
+        "title": "美國對台8項軍售逾111億美元 國防部表達誠摯感謝",
         "url": "https://www.cna.com.tw/news/aipl/202512180020.aspx"
+      },
+      {
+        "outlet": "聯合新聞網",
+        "title": "美宣布逾3500億對台軍售 海馬士打擊系統金額最高",
+        "url": "https://udn.com/news/story/10930/9210595"
+      },
+      {
+        "outlet": "TVBS新聞網",
+        "title": "含M109A7自走砲、海馬士！美再宣布對台軍售3500億 項目曝",
+        "url": "https://news.tvbs.com.tw/world/3075734"
+      },
+      {
+        "outlet": "華視新聞",
+        "title": "美對台逾百億美元軍售！ M109A7自走砲.海馬士受關注",
+        "url": "https://news.cts.com.tw/cts/general/202512/202512182545179.html"
       }
     ]
   },
@@ -1211,8 +1295,23 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "川普簽署國防授權法 含軍援台灣最高10億美元 | 政治",
+        "title": "川普簽署國防授權法 含軍援台灣最高10億美元",
         "url": "https://www.cna.com.tw/news/aipl/202512190038.aspx"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "挹注台灣安全！川普簽署「國防授權法案」含軍援台灣最高10億美元",
+        "url": "https://news.ltn.com.tw/news/politics/breakingnews/5283141"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "川普簽署國防授權法案 援台10億美元",
+        "url": "https://news.ltn.com.tw/news/world/paper/1736583"
+      },
+      {
+        "outlet": "聯合新聞網",
+        "title": "美參議院通過9010億美元2026國防授權法 川普將簽署生效",
+        "url": "https://udn.com/news/story/10930/9210459"
       }
     ]
   },
@@ -1287,8 +1386,23 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "普發現金更近了 立院送出韌性特別預算待總統公布 | 政治",
+        "title": "普發現金更近了 立院送出韌性特別預算待總統公布",
         "url": "https://www.cna.com.tw/news/aipl/202510230219.aspx"
+      },
+      {
+        "outlet": "中央社",
+        "title": "普發現金1萬來了 總統公布韌性特別預算",
+        "url": "https://www.cna.com.tw/news/aipl/202510230319.aspx"
+      },
+      {
+        "outlet": "聯合新聞網",
+        "title": "領1萬元腳步近了！賴總統今晚公布普發現金特別預算",
+        "url": "https://udn.com/news/story/6656/9092961"
+      },
+      {
+        "outlet": "台視新聞",
+        "title": "普發1萬要來了！總統府正式公告韌性特別預算案",
+        "url": "https://news.ttv.com.tw/news/11410230003300W"
       }
     ]
   },
@@ -1388,6 +1502,11 @@
         "outlet": "鏡報",
         "title": "今為台灣「民主換日線」 解嚴天數超越戒嚴時間",
         "url": "https://www.mirrordaily.news/story/19592"
+      },
+      {
+        "outlet": "中天新聞網",
+        "title": "民進黨賀「台灣解嚴天數正式超越戒嚴」遭網友灌爆：之前不是挺韓國？",
+        "url": "https://tw.news.yahoo.com/%E6%B0%91%E9%80%B2%E9%BB%A8%E8%B3%80-%E5%8F%B0%E7%81%A3%E8%A7%A3%E5%9A%B4%E5%A4%A9%E6%95%B8%E6%AD%A3%E5%BC%8F%E8%B6%85%E8%B6%8A%E6%88%92%E5%9A%B4-%E7%B6%B2%E5%82%BB%E7%9C%BC%E5%96%8A-%E4%B9%8B%E5%89%8D%E4%B8%8D%E6%98%AF%E6%8C%BA%E9%9F%93%E5%9C%8B%E6%88%92%E5%9A%B4-151232170.html"
       }
     ]
   },
@@ -1567,8 +1686,23 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "立委罷免案首波成案 中選會最快20日審定 | 政治",
+        "title": "立委罷免案首波成案 中選會最快20日審定",
         "url": "https://www.cna.com.tw/news/aipl/202506070132.aspx"
+      },
+      {
+        "outlet": "聯合新聞網",
+        "title": "名單整理包／首波罷免案7月26日投票 看24名立委在那些選區？",
+        "url": "https://udn.com/news/story/124323/8820106"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "中選會公告24+1罷免案7/26投票 通過門檻、投票規定一次看",
+        "url": "https://news.pts.org.tw/article/757142"
+      },
+      {
+        "outlet": "客新聞",
+        "title": "大罷免24+1成案 7月26日投票",
+        "url": "https://hakkanews.tw/2025/06/20/the-241-recall-was-207194/"
       }
     ]
   },
@@ -1611,8 +1745,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "三峽重大車禍3死12傷事件彙整 78歲駕駛闖紅燈高速衝撞學生行人 | 社會",
+        "title": "三峽重大車禍3死12傷事件彙整 78歲駕駛闖紅燈高速衝撞學生行人",
         "url": "https://www.cna.com.tw/news/asoc/202505190345.aspx"
+      },
+      {
+        "outlet": "聯合新聞網",
+        "title": "三峽78歲翁駕車暴衝釀3死12傷 肇事原因待查",
+        "url": "https://udn.com/news/story/124499/8750908"
+      },
+      {
+        "outlet": "TVBS新聞網",
+        "title": "三峽車禍學童死傷狀況曝 4學生ICU與死神搏鬥、5歲童出院",
+        "url": "https://news.tvbs.com.tw/politics/2875804"
       }
     ]
   },
@@ -1627,8 +1771,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "黃仁勳宣布輝達海外總部落腳士林北投 北士科雀屏中選 | 產經",
+        "title": "黃仁勳宣布輝達海外總部落腳士林北投 北士科雀屏中選",
         "url": "https://www.cna.com.tw/news/afe/202505190115.aspx"
+      },
+      {
+        "outlet": "聯合新聞網",
+        "title": "整理包／一文看黃仁勳 Computex 演講亮點！輝達台灣總部落腳北士科 點名55家台廠供應鏈",
+        "url": "https://money.udn.com/money/story/5612/8750451"
+      },
+      {
+        "outlet": "TechNews 科技新報",
+        "title": "黃仁勳台北演講重點一次看，輝達蛻變 AI 基礎設施公司",
+        "url": "https://finance.technews.tw/2025/05/19/computex-2025-nvidia-brief/"
       }
     ]
   },
@@ -1679,8 +1833,23 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "核三2號機17日下午降載18日凌晨停機 台灣正式進入非核家園 | 產經",
+        "title": "核三2號機17日下午降載18日凌晨停機 台灣正式進入非核家園",
         "url": "https://www.cna.com.tw/news/afe/202505160355.aspx"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "核三廠2號機17日正式除役 卓揆：今天過後台灣沒有核電",
+        "url": "https://news.pts.org.tw/article/751629"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "核三廠2號機午夜將停機 台電：國內用電無虞",
+        "url": "https://news.pts.org.tw/article/751646"
+      },
+      {
+        "outlet": "遠見雜誌",
+        "title": "無核時代來臨！核三2號機正式停機，非核家園能撐多久？延役與公投挑戰迎面而來",
+        "url": "https://www.gvm.com.tw/article/121364"
       }
     ]
   },
@@ -1696,8 +1865,23 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "剴剴案保母姊妹遭判無期、18年徒刑 北院：以虐取樂惡性重大 | 社會",
+        "title": "剴剴案保母姊妹遭判無期、18年徒刑 北院：以虐取樂惡性重大",
         "url": "https://www.cna.com.tw/news/asoc/202505130179.aspx"
+      },
+      {
+        "outlet": "聯合新聞網",
+        "title": "剴剴凌虐致死案 保母劉彩萱判無期徒刑、劉若琳判刑18年",
+        "url": "https://udn.com/news/story/124487/8736551"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "剴剴遭保母姊妹虐死案宣判 姊姊無期徒刑、妹妹判刑18年",
+        "url": "https://news.pts.org.tw/article/750931"
+      },
+      {
+        "outlet": "聯合新聞網",
+        "title": "剴剴案重判 外婆委任律師：嚴厲警告潛在虐童者",
+        "url": "https://udn.com/news/story/7315/8737751"
       }
     ]
   },
@@ -1750,8 +1934,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "蔡明彥：海峽雷霆-2025A展現共軍整肅內部仍能演習 | 政治",
+        "title": "蔡明彥：海峽雷霆-2025A展現共軍整肅內部仍能演習",
         "url": "https://www.cna.com.tw/news/aipl/202504090168.aspx"
+      },
+      {
+        "outlet": "中央社",
+        "title": "中共海峽雷霆-2025A軍演 東海實彈射擊",
+        "url": "https://www.cna.com.tw/news/acn/202504020058.aspx"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "中國軍演還沒完！「海峽雷霆-2025A」今展開 鎖定海峽中南部",
+        "url": "https://def.ltn.com.tw/article/breakingnews/4999106"
       }
     ]
   },
@@ -1816,8 +2010,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "賴總統：因應中國滲透與間諜威脅 恢復軍事審判制度 | 政治",
+        "title": "賴總統：因應中國滲透與間諜威脅 恢復軍事審判制度",
         "url": "https://www.cna.com.tw/news/aipl/202503135004.aspx"
+      },
+      {
+        "outlet": "中央社",
+        "title": "賴總統宣布恢復軍事審判 國防部下午4時記者會說明",
+        "url": "https://www.cna.com.tw/news/aipl/202503130194.aspx"
+      },
+      {
+        "outlet": "ETtoday",
+        "title": "快訊／賴清德宣布「恢復軍事審判」 軍法官回到第一線",
+        "url": "https://www.ettoday.net/news/20250313/2924657.htm"
       }
     ]
   },
@@ -1833,8 +2037,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "台積電擴大對美投資至少1000億美元蓋新廠 川普：可避免關稅 | 國際",
+        "title": "台積電擴大對美投資至少1000億美元蓋新廠 川普：可避免關稅",
         "url": "https://www.cna.com.tw/news/aopl/202503040013.aspx"
+      },
+      {
+        "outlet": "鉅亨網",
+        "title": "台積電承諾投資千億美元爭取時間 美國廠量產後僅占營收1/3",
+        "url": "https://news.cnyes.com/news/id/5920273"
+      },
+      {
+        "outlet": "聯合新聞網",
+        "title": "解讀台積電擴大美國投資：變成「美積電」的擔憂有無必要？台灣矽盾何去何從？",
+        "url": "https://global.udn.com/global_vision/story/8663/8599895"
       }
     ]
   },
@@ -1972,8 +2186,23 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "死囚黃麟凱槍決伏法 法務部舉4執行理由：情節最嚴重犯行 | 社會",
+        "title": "死囚黃麟凱槍決伏法 法務部舉4執行理由：情節最嚴重犯行",
         "url": "https://www.cna.com.tw/news/asoc/202501170003.aspx"
+      },
+      {
+        "outlet": "中央社",
+        "title": "法務部執行死囚黃麟凱槍決 民團：違法執行無異恣意殺人",
+        "url": "https://www.cna.com.tw/news/asoc/202501160358.aspx"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "賴清德政府上任後首度執行死刑 法務部證實：黃麟凱於22:02遭槍決伏法",
+        "url": "https://news.pts.org.tw/article/734022"
+      },
+      {
+        "outlet": "端傳媒",
+        "title": "賴政府上台後首槍決，死囚黃麟凱成死刑釋憲後第一案",
+        "url": "https://theinitium.com/article/20250117-whatsnew-taiwan-death-penalty"
       }
     ]
   },
@@ -2136,8 +2365,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "柯文哲羈押禁見 北院裁定理由：明知違法仍執意為之 | 社會",
+        "title": "柯文哲羈押禁見 北院裁定理由：明知違法仍執意為之",
         "url": "https://www.cna.com.tw/news/asoc/202409050315.aspx"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "柯文哲涉京華城案遭羈押禁見 收押期限多久？抗告可以提幾次？",
+        "url": "https://news.pts.org.tw/article/713583"
+      },
+      {
+        "outlet": "商業周刊",
+        "title": "京華城案懶人包：柯文哲遭羈押禁見！爭議、重點時間軸一次看",
+        "url": "https://www.businessweekly.com.tw/focus/blog/3016587"
       }
     ]
   },
@@ -2153,8 +2392,13 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "京華城案沈慶京應曉薇涉貪遭聲押 北院晚間開庭 | 社會",
+        "title": "京華城案沈慶京應曉薇涉貪遭聲押 北院晚間開庭",
         "url": "https://www.cna.com.tw/news/asoc/202408290399.aspx"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "京華城弊案》應曉薇涉收沈慶京4500萬賄款 成檢方聲押關鍵",
+        "url": "https://news.ltn.com.tw/news/Taipei/breakingnews/4783558"
       }
     ]
   },
@@ -2170,8 +2414,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "台股崩跌1807點失守2萬 跌點與跌幅皆創歷年新高 | 證券",
+        "title": "台股崩跌1807點失守2萬 跌點與跌幅皆創歷年新高",
         "url": "https://www.cna.com.tw/news/afe/202408050135.aspx"
+      },
+      {
+        "outlet": "聯合新聞網",
+        "title": "圖表看時事／黑色星期一亞洲股災…台股暴跌1807點創紀錄 圖解台史上重大股災",
+        "url": "https://udn.com/news/story/6904/8142469"
+      },
+      {
+        "outlet": "鉅亨網",
+        "title": "2024台股刷榜年 包辦史上前五大跌點、六大漲點紀錄、歷史新高24416",
+        "url": "https://news.cnyes.com/news/id/5816715"
       }
     ]
   },
@@ -2183,12 +2437,27 @@
       "政治",
       "社會"
     ],
-    "source_url": "https://www.cna.com.tw/news/asoc/202407260124.aspx",
+    "source_url": "https://www.cna.com.tw/news/asoc/202407260160.aspx",
     "sources": [
       {
         "outlet": "中央社",
-        "title": "颱風凱米釀災 立委促全力協助農漁民 | 政治",
-        "url": "https://www.cna.com.tw/news/asoc/202407260124.aspx"
+        "title": "高虹安貪污判7年4月 法院：詐助理費11萬餘元",
+        "url": "https://www.cna.com.tw/news/asoc/202407260160.aspx"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "國民黨立委顏寬恒被控貪污、偽造文書等3案 一審判刑合計8年4月",
+        "url": "https://news.ltn.com.tw/news/politics/breakingnews/4748855"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "新竹市長高虹安詐領助理費 一審判7年4個月、褫奪公權4年",
+        "url": "https://news.pts.org.tw/article/706749"
+      },
+      {
+        "outlet": "菱傳媒",
+        "title": "顏寬恒、高虹安詐助理費算重判嗎？一張圖表帶你看懂判決眉角",
+        "url": "https://rwnews.tw/article.php?news=16492"
       }
     ]
   },
@@ -2205,8 +2474,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "颱風凱米來襲24日21縣市颱風假 全台停班課一覽 | 生活",
+        "title": "颱風凱米來襲24日21縣市颱風假 全台停班課一覽",
         "url": "https://www.cna.com.tw/news/ahel/202407235003.aspx"
+      },
+      {
+        "outlet": "遠見雜誌",
+        "title": "颱風動態最新路徑：凱米颱風假停班停課範圍擴大，全台僅1縣市上班上課",
+        "url": "https://www.gvm.com.tw/article/114506"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "颱風凱米／中南部估仍持續降雨 7/26各縣市停班課一次看",
+        "url": "https://news.pts.org.tw/article/706212"
       }
     ]
   },
@@ -2222,8 +2501,23 @@
     "sources": [
       {
         "outlet": "自由時報",
-        "title": "鄭文燦涉貪案重開羈押庭 桃院裁定1200萬交保境管 - 政治",
+        "title": "鄭文燦涉貪案重開羈押庭 桃院裁定1200萬交保境管",
         "url": "https://news.ltn.com.tw/news/politics/breakingnews/4730907"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "鄭文燦第三度羈押庭結果出爐 桃園地院逆轉裁定羈押禁見",
+        "url": "https://news.pts.org.tw/article/704456"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "鄭文燦收押》桃園看守所 歷來最大咖",
+        "url": "https://news.ltn.com.tw/news/politics/paper/1656183"
+      },
+      {
+        "outlet": "中央社",
+        "title": "鄭文燦涉貪羈押禁見2個月確定 高等法院駁回抗告",
+        "url": "https://www.cna.com.tw/news/aipl/202407125006.aspx"
       }
     ]
   },
@@ -2453,8 +2747,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "公然侮辱罪釋憲案 憲法法庭判合憲但限縮範圍 | 社會",
+        "title": "公然侮辱罪釋憲案 憲法法庭判合憲但限縮範圍",
         "url": "https://www.cna.com.tw/news/asoc/202404260194.aspx"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "公然侮辱罪侵害言論自由應除罪？憲法法庭判決「合憲但應加以限縮」",
+        "url": "https://news.ltn.com.tw/news/society/breakingnews/4654097"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "公然侮辱罪侵害言論自由？ 憲法法庭：合憲但限縮適用範圍",
+        "url": "https://news.pts.org.tw/article/692370"
       }
     ]
   },
@@ -2499,8 +2803,18 @@
     "sources": [
       {
         "outlet": "自由時報",
-        "title": "花蓮強震》芮氏規模7.2 全台有感 花蓮震度7級 - 生活",
+        "title": "花蓮強震》芮氏規模7.2 全台有感 花蓮震度7級",
         "url": "https://news.ltn.com.tw/news/life/breakingnews/4628206"
+      },
+      {
+        "outlet": "報導者",
+        "title": "規模7.2的403花蓮地震18死逾千傷、逆衝斷層向北破裂，3天內慎防較大餘震",
+        "url": "https://www.twreporter.org/a/taiwan-0403earthquake"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "403地震各地震度幾級？解析921地震後最大規模強震，餘震超過700起",
+        "url": "https://ourisland.pts.org.tw/content/10684"
       }
     ]
   },
@@ -2761,8 +3075,13 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "最低工資法三讀 勞部：保障基層勞工生活水準 | 生活",
+        "title": "最低工資法三讀 勞部：保障基層勞工生活水準",
         "url": "https://www.cna.com.tw/news/ahel/202312120096.aspx"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "《最低工資法》三讀通過 違法業主最高可罰150萬",
+        "url": "https://news.pts.org.tw/article/670966"
       }
     ]
   },
@@ -2779,8 +3098,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "大巨蛋前世今生1／大巨蛋開大門迎萬人 32年歷史一次看 | 地方",
+        "title": "大巨蛋前世今生1／大巨蛋開大門迎萬人 32年歷史一次看",
         "url": "https://www.cna.com.tw/news/aloc/202311180020.aspx"
+      },
+      {
+        "outlet": "中央社",
+        "title": "王貞治大巨蛋開球「台灣將稱霸亞洲」世界全壘打王對寶島的野球情懷",
+        "url": "https://www.cna.com.tw/news/aspt/202312025003.aspx"
+      },
+      {
+        "outlet": "ETtoday",
+        "title": "台北大巨蛋落成很感動 王貞治預約來看中華隊比賽",
+        "url": "https://sports.ettoday.net/news/2635242"
       }
     ]
   },
@@ -2843,8 +3172,13 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "颱風小犬籠罩蘭嶼陣風逾17級吹壞風速計 破台灣126年紀錄 | 地方",
+        "title": "颱風小犬籠罩蘭嶼陣風逾17級吹壞風速計 破台灣126年紀錄",
         "url": "https://www.cna.com.tw/news/aloc/202310050015.aspx"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "小犬真的凶！吹壞蘭嶼氣象站風速計 狂颳台灣史上最強陣風",
+        "url": "https://news.ltn.com.tw/news/life/breakingnews/4448879"
       }
     ]
   },
@@ -2862,6 +3196,16 @@
         "outlet": "自由時報",
         "title": "首艘國造潛艦「海鯤號」今下水 以國徽包覆艦艏及魚雷管",
         "url": "https://def.ltn.com.tw/article/breakingnews/4442089"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "國造潛艦「海鯤」命名下水 蔡英文：歷史將會永遠記住這一天",
+        "url": "https://def.ltn.com.tw/article/breakingnews/4442305"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "國造潛艦原型艦「海鯤號」下水 預計明年底交艦",
+        "url": "https://news.pts.org.tw/article/659284"
       }
     ]
   },
@@ -2880,6 +3224,16 @@
         "outlet": "聯合新聞網",
         "title": "明揚國際工廠大火",
         "url": "https://udn.com/news/story/123754/7463090"
+      },
+      {
+        "outlet": "中央社",
+        "title": "屏東工廠爆炸7死3失蹤 續搜2樓研判失聯者被壓住",
+        "url": "https://www.cna.com.tw/news/asoc/202309230015.aspx"
+      },
+      {
+        "outlet": "報導者",
+        "title": "屏東明揚工廠爆炸24小時，4消防員殉職、98傷，揭廠房工安與消防職安缺失",
+        "url": "https://www.twreporter.org/a/pingtung-launch-tech-explosion"
       }
     ]
   },
@@ -2943,8 +3297,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "颱風海葵結構紮實午後登陸台東 估4日傍晚台灣本島脫離暴風圈 | 生活",
+        "title": "颱風海葵結構紮實午後登陸台東 估4日傍晚台灣本島脫離暴風圈",
         "url": "https://www.cna.com.tw/news/ahel/202309030014.aspx"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "颱風海葵／今清晨二次登陸 南部東部等地仍須防強風豪雨",
+        "url": "https://news.pts.org.tw/article/654559"
+      },
+      {
+        "outlet": "鏡週刊",
+        "title": "海葵颱風觸陸！預計下午從台東登陸 今明各地嚴防強風豪雨",
+        "url": "https://www.mirrormedia.mg/story/20230903edi001/"
       }
     ]
   },
@@ -2960,8 +3324,18 @@
     "sources": [
       {
         "outlet": "自由時報",
-        "title": "立委任內涉詐助理費 高虹安貪污案起訴 - 政治",
+        "title": "立委任內涉詐助理費 高虹安貪污案起訴",
         "url": "https://news.ltn.com.tw/news/politics/breakingnews/4395445"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "北檢批高虹安公私不分、壓榨下屬 起訴書全文曝光",
+        "url": "https://news.ltn.com.tw/news/politics/breakingnews/4395609"
+      },
+      {
+        "outlet": "鏡週刊",
+        "title": "高虹安涉詐助理費遭北檢起訴！資策會控背信案不起訴",
+        "url": "https://www.mirrormedia.mg/story/20230814edi010/"
       }
     ]
   },
@@ -2980,6 +3354,16 @@
         "outlet": "聯合新聞網",
         "title": "台灣碳權交易所成立",
         "url": "https://udn.com/news/story/7238/7353769"
+      },
+      {
+        "outlet": "總統府",
+        "title": "臺灣碳權交易所揭牌 總統：持續協助企業面對淨零轉型 把低碳、零碳的挑戰化為新的機會與商機",
+        "url": "https://www.president.gov.tw/News/27785"
+      },
+      {
+        "outlet": "行政院",
+        "title": "臺灣碳權交易所正式揭牌 陳揆：完善國內碳權交易市場 逐步邁向淨零轉型目標",
+        "url": "https://www.ey.gov.tw/Page/9277F759E41CCD91/cb41025b-1dbf-429b-80a9-d5c08d50d6f1"
       }
     ]
   },
@@ -2995,8 +3379,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "農委會升格農業部大事記 | 生活",
+        "title": "農委會升格農業部大事記",
         "url": "https://www.cna.com.tw/news/ahel/202305160045.aspx"
+      },
+      {
+        "outlet": "農業部官網",
+        "title": "農業部揭牌成立 開創臺灣農業發展新紀元",
+        "url": "https://www.moa.gov.tw/theme_data.php?theme=news&sub_theme=agri&id=9112"
+      },
+      {
+        "outlet": "鏡週刊",
+        "title": "立法院三讀「農委會升格農業部」 陳吉仲：回應農民35年前訴求",
+        "url": "https://www.mirrormedia.mg/story/20230516edi031/"
       }
     ]
   },
@@ -3015,6 +3409,16 @@
         "outlet": "公視新聞",
         "title": "性平三法修法三讀通過 權勢性騷雇主最重罰百萬",
         "url": "https://news.pts.org.tw/article/648902"
+      },
+      {
+        "outlet": "報導者",
+        "title": "#MeToo催生新版性平三法：5大修訂重點更有助被害人嗎？是否有漏洞？",
+        "url": "https://www.twreporter.org/a/taiwan-metoo-amendment"
+      },
+      {
+        "outlet": "端傳媒",
+        "title": "解讀台灣新版性平三法：修法有哪些重點，還有什麼未竟之業？",
+        "url": "https://theinitium.com/article/20230809-taiwan-metoo-amendment"
       }
     ]
   },
@@ -3032,6 +3436,16 @@
         "outlet": "公視新聞",
         "title": "新北板橋幼兒園餵藥案偵結 9教保員證據不足不起訴",
         "url": "https://news.pts.org.tw/article/645929"
+      },
+      {
+        "outlet": "鏡週刊",
+        "title": "新北幼兒園遭爆「餵小朋友安眠藥」 累計10案全園採檢！教育局回應了",
+        "url": "https://www.mirrormedia.mg/story/20230605edi029/"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "新北幼兒園餵藥案 毒理專家招名威分析「巴比妥」對幼童恐怖影響",
+        "url": "https://news.ltn.com.tw/news/life/breakingnews/4328327"
       }
     ]
   },
@@ -3048,8 +3462,13 @@
     "sources": [
       {
         "outlet": "自由時報",
-        "title": "建案吊臂砸穿中捷列車 釀1死10傷 - 社會",
+        "title": "建案吊臂砸穿中捷列車 釀1死10傷",
         "url": "https://news.ltn.com.tw/news/society/breakingnews/4296975"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "中捷事故1死8傷 車廂內慘況搶救畫面曝光",
+        "url": "https://news.ltn.com.tw/news/society/breakingnews/4297351"
       }
     ]
   },
@@ -3088,8 +3507,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "蔡麥歷史會晤 蔡英文感謝美支持、麥卡錫稱台美友誼是和平關鍵 | 政治",
+        "title": "蔡麥歷史會晤 蔡英文感謝美支持、麥卡錫稱台美友誼是和平關鍵",
         "url": "https://www.cna.com.tw/news/aipl/202304060019.aspx"
+      },
+      {
+        "outlet": "風傳媒",
+        "title": "「台灣沒有被孤立、也並不孤單！」蔡英文總統在雷根圖書館談話全文",
+        "url": "https://www.storm.mg/article/4771415"
+      },
+      {
+        "outlet": "TVBS新聞網",
+        "title": "有玄機！蔡麥會晤選雷根圖書館藏深意 蔡英文向「他」致敬",
+        "url": "https://news.tvbs.com.tw/politics/2088961"
       }
     ]
   },
@@ -3106,8 +3535,23 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "馬英九訪中臨時行程更動 參觀武漢抗疫展 | 兩岸",
+        "title": "馬英九訪中臨時行程更動 參觀武漢抗疫展",
         "url": "https://www.cna.com.tw/news/acn/202303300107.aspx"
+      },
+      {
+        "outlet": "中央社",
+        "title": "馬英九3/27起赴南京上海等地 首位訪問中國卸任總統",
+        "url": "https://www.cna.com.tw/news/aipl/202303195002.aspx"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "馬英九赴中祭祖交流【完整記錄】",
+        "url": "https://news.pts.org.tw/live/641c01237283d50f9fa5f0ca"
+      },
+      {
+        "outlet": "鏡週刊",
+        "title": "馬英九本月底赴陸「祭祖」訪南京、上海等地 成74年來首位卸任總統訪中國",
+        "url": "https://www.mirrormedia.mg/story/20230319edi014/"
       }
     ]
   },
@@ -3124,8 +3568,18 @@
     "sources": [
       {
         "outlet": "自由時報",
-        "title": "宏都拉斯宣布與我斷交 外交部9:30開記者會回應 - 政治",
+        "title": "宏都拉斯宣布與我斷交 外交部9:30開記者會回應",
         "url": "https://news.ltn.com.tw/news/politics/breakingnews/4251481"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "外交部宣布斷交 宏都拉斯大使昨已離台",
+        "url": "https://news.ltn.com.tw/news/politics/breakingnews/4251537"
+      },
+      {
+        "outlet": "中央社",
+        "title": "吳釗燮：宏都拉斯提3條件合計24.5億美元 直接給錢像賄賂",
+        "url": "https://www.cna.com.tw/news/aipl/202303260040.aspx"
       }
     ]
   },
@@ -3142,8 +3596,18 @@
     "sources": [
       {
         "outlet": "中央社",
-        "title": "二膽上兵失聯案 國防部：財務身心違常者調離離島 | 政治",
+        "title": "二膽上兵失聯案 國防部：財務身心違常者調離離島",
         "url": "https://www.cna.com.tw/news/aipl/202303140331.aspx"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "金門二膽失聯上兵傳游往中國獲救 陳玉珍：人平安在廈門",
+        "url": "https://news.ltn.com.tw/news/politics/breakingnews/4235672"
+      },
+      {
+        "outlet": "公視新聞",
+        "title": "二膽上兵陳嘉壎脫逃 金門地檢署發布通緝令",
+        "url": "https://news.pts.org.tw/article/627890"
       }
     ]
   },
@@ -3162,6 +3626,16 @@
         "outlet": "公視新聞",
         "title": "普發現金6000元特別條例 立院今三讀通過",
         "url": "https://news.pts.org.tw/article/623852"
+      },
+      {
+        "outlet": "鏡週刊",
+        "title": "普發6000要來了！立院三讀通過《疫後特別條例》 最快發放時間曝光",
+        "url": "https://www.mirrormedia.mg/story/20230221edi021"
+      },
+      {
+        "outlet": "客新聞",
+        "title": "立法院三讀特別條例 普發現金6000元再進一步",
+        "url": "https://hakkanews.tw/2023/02/21/third-reading-of-special-regulations-on-legislative-yuan-6000-in-cash/"
       }
     ]
   },
