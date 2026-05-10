@@ -9,12 +9,14 @@ Curation standard: 寧缺勿濫 — only true historical landmarks, not routine 
 """
 
 import anthropic
+import httpx
 import json
 import os
 import re
 import sys
 from datetime import date, datetime, timedelta
 from pathlib import Path
+from urllib.parse import urlparse
 
 # ─── paths ────────────────────────────────────────────────────────────────────
 REPO_ROOT = Path(__file__).parent.parent
@@ -25,12 +27,24 @@ OUTPUT_FILE = REPO_ROOT / "data" / "events.json"
 MODEL = "claude-sonnet-4-6"
 MAX_TOKENS = 4096
 
+# Major Taiwanese news outlets the agent should pull cross-references from.
+# Order roughly reflects mainstream prominence; agent picks 2–4 different ones.
+PREFERRED_OUTLETS = [
+    "中央社", "自由時報", "聯合新聞網", "公視新聞", "新頭殼",
+    "TVBS新聞網", "三立新聞網", "ETtoday", "中時新聞網", "東森新聞",
+    "鏡週刊", "報導者", "客新聞", "商業周刊", "華視新聞", "民視新聞",
+    "台視新聞", "蘋果新聞網", "風傳媒", "鉅亨網", "BBC", "Reuters",
+]
+
+# Skip URL liveness check via env var (for testing without network).
+SKIP_URL_CHECK = os.environ.get("SKIP_URL_CHECK", "").lower() in ("1", "true", "yes")
+
 # ─── system prompt ────────────────────────────────────────────────────────────
-SYSTEM_PROMPT = """\
+SYSTEM_PROMPT = f"""\
 你是台灣歷史年表的資深策展人，負責維護一份從1895年至今的重大歷史事件資料庫。
 
 ## 任務
-搜尋過去 48 小時內台灣發生的重大事件，評估哪些值得納入歷史年表。
+搜尋過去 48 小時內台灣發生的重大事件，評估哪些值得納入歷史年表，並為每筆事件**蒐集多家媒體交叉佐證**。
 
 ## 年表收錄標準（寧缺勿濫）
 ✅ 收錄：
@@ -58,30 +72,50 @@ SYSTEM_PROMPT = """\
 - 5–6：重要但非里程碑（不收錄）
 - 1–4：例行或地方性（不收錄）
 
-## 搜尋策略（節省成本：總搜尋次數控制在 10 次以內）
-1. 先用 1–2 次搜尋廣泛瀏覽過去72小時台灣重大新聞
-2. 只對真正有機會入選（初步判斷 ≥7 分）的事件才做交叉驗證（1 次即可）
-3. 優先選擇：BBC中文、自由時報、聯合報、中央社、公視新聞
-4. 確認消息屬實後，找到最具代表性的一個新聞連結作為 source_url
-5. 發現事件明顯不夠格，直接跳過，不再搜尋
+## 搜尋策略（搜尋次數上限 18 次）
+1. 先用 1–2 次搜尋廣泛瀏覽過去 72 小時台灣重大新聞
+2. 對候選事件（初步 ≥7 分）做**多媒體交叉驗證**：
+   - 為每筆事件找 **2–4 個不同媒體**的報導
+   - 每媒體最多 1 筆，**禁止同一媒體多筆**
+   - 優先媒體：{', '.join(PREFERRED_OUTLETS[:10])}
+3. 若該事件只有單一媒體願意報、或非常冷門，可以**只回 1 個來源**——但**不可為了湊數捏造**
+4. 不夠格的事件直接跳過
+
+## 來源 URL 嚴格規範（防止 hallucination）
+- 每個 URL **必須來自你實際做過的 web_search 結果**，從搜尋回傳的 link 直接複製
+- **不可從記憶推測 URL**、**不可用搜尋頁面 URL 取代文章 URL**
+- URL 應指向**單篇文章頁面**（非首頁、非分類頁、非搜尋結果頁）
+- 同一事件若同個 outlet 出現多篇，挑**最完整**的一篇即可
 
 ## 輸出格式
 完成搜尋後，輸出 JSON 陣列（若無符合事件則輸出空陣列 []）：
 
 ```json
 [
-  {
+  {{
     "date": "YYYY-MM-DD",
     "title": "15字以內精確標題",
     "desc": "80-120字的中文描述，說明事件背景、經過、意義",
     "tags": ["政治"|"外交"|"社會"|"經濟"|"災難"|"司法"|"科技"|"兩岸"|"選舉"],
-    "source_url": "https://...",
+    "sources": [
+      {{
+        "outlet": "中央社",
+        "title": "報導實際標題（不要含媒體名稱與分類後綴）",
+        "url": "https://www.cna.com.tw/news/.../article.aspx"
+      }},
+      {{
+        "outlet": "自由時報",
+        "title": "...",
+        "url": "https://news.ltn.com.tw/news/..."
+      }}
+    ],
     "score": 7
-  }
+  }}
 ]
 ```
 
 標題規範：簡潔精準，15字以內，不含標點符號，類似「總統大選開票完成」「921大地震發生」格式。
+sources 中至少 1 筆，理想 2-4 筆，**每筆來自不同 outlet**。
 """
 
 # ─── user prompt ──────────────────────────────────────────────────────────────
@@ -91,8 +125,9 @@ def build_user_prompt(target_date: date, existing_titles: set[str]) -> str:
     return f"""\
 今天是 {target_date.isoformat()}（台灣時間）。
 
-請搜尋 {start_date.isoformat()} 至 {target_date.isoformat()} 期間台灣發生的重大事件。
-注意：請節省搜尋次數，總計不超過 10 次 web_search。
+請搜尋 {start_date.isoformat()} 至 {target_date.isoformat()} 期間台灣發生的重大事件，
+並為每筆事件找 2-4 個不同媒體的交叉佐證來源。
+搜尋次數總計不超過 18 次。
 
 【已收錄的近期事件（請勿重複）】
 {recent_titles}
@@ -170,12 +205,20 @@ def parse_events(text: str, existing_titles: set[str]) -> list[dict]:
 
     # Validate and filter
     valid = []
-    required_fields = {"date", "title", "desc", "tags", "source_url"}
+    required_fields = {"date", "title", "desc", "tags", "sources"}
     for ev in events:
         if not isinstance(ev, dict):
             continue
+        # Backward compat: if agent still returned legacy `source_url`, wrap it
+        if "sources" not in ev and "source_url" in ev:
+            ev["sources"] = [{
+                "outlet": _outlet_from_url(ev["source_url"]),
+                "title": ev.get("title", ""),
+                "url": ev["source_url"],
+            }]
         if not required_fields.issubset(ev.keys()):
-            print(f"[parse] Skipping event missing fields: {ev.get('title', '?')}", flush=True)
+            missing = required_fields - ev.keys()
+            print(f"[parse] Skipping event missing fields {missing}: {ev.get('title', '?')}", flush=True)
             continue
         if ev["title"] in existing_titles:
             print(f"[parse] Skipping duplicate: {ev['title']}", flush=True)
@@ -190,18 +233,130 @@ def parse_events(text: str, existing_titles: set[str]) -> list[dict]:
         except ValueError:
             print(f"[parse] Invalid date format for: {ev['title']}", flush=True)
             continue
-        # Sanitize: remove internal 'score' field before saving
+        # Validate + sanitize sources
+        sources = _sanitize_sources(ev.get("sources"), ev["title"])
+        if not sources:
+            print(f"[parse] Skipping event with 0 valid sources: {ev['title']}", flush=True)
+            continue
+        # Sanitize event: remove internal 'score' field before saving
         clean_ev = {
             "date": ev["date"],
             "title": ev["title"],
             "desc": ev["desc"],
             "tags": ev["tags"] if isinstance(ev["tags"], list) else [ev["tags"]],
-            "source_url": ev["source_url"],
+            "sources": sources,
         }
         valid.append(clean_ev)
-        print(f"[parse] Accepted: [{ev['date']}] {ev['title']} (score={score})", flush=True)
+        outlets = ", ".join(s["outlet"] for s in sources)
+        print(f"[parse] Accepted: [{ev['date']}] {ev['title']} (score={score}, {len(sources)} sources: {outlets})", flush=True)
 
     return valid
+
+
+# ─── source validation helpers ────────────────────────────────────────────────
+_OUTLET_HOST_HINTS = [
+    ("中央社", "cna.com.tw"),
+    ("自由時報", "ltn.com.tw"),
+    ("聯合新聞網", "udn.com"),
+    ("中時新聞網", "chinatimes.com"),
+    ("三立新聞網", "setn.com"),
+    ("TVBS新聞網", "tvbs.com.tw"),
+    ("ETtoday", "ettoday.net"),
+    ("東森新聞", "ebc.net.tw"),
+    ("公視新聞", "pts.org.tw"),
+    ("民視新聞", "ftvnews.com.tw"),
+    ("華視新聞", "cts.com.tw"),
+    ("台視新聞", "ttv.com.tw"),
+    ("關鍵評論網", "thenewslens.com"),
+    ("報導者", "twreporter.org"),
+    ("鏡週刊", "mirrormedia.mg"),
+    ("新頭殼", "newtalk.tw"),
+    ("風傳媒", "storm.mg"),
+    ("商業周刊", "businessweekly.com.tw"),
+    ("鉅亨網", "cnyes.com"),
+    ("客新聞", "hakkanews.tw"),
+    ("BBC", "bbc.com"),
+    ("Reuters", "reuters.com"),
+]
+
+
+def _outlet_from_url(url: str) -> str:
+    try:
+        host = urlparse(url).netloc.lower()
+    except Exception:
+        return "來源"
+    for name, hint in _OUTLET_HOST_HINTS:
+        if host == hint or host.endswith("." + hint):
+            return name
+    return "來源"
+
+
+def _is_valid_url(url: str) -> bool:
+    """Basic shape check for a real article URL."""
+    if not isinstance(url, str) or len(url) < 12:
+        return False
+    try:
+        parsed = urlparse(url)
+    except Exception:
+        return False
+    if parsed.scheme not in ("http", "https"):
+        return False
+    if not parsed.netloc:
+        return False
+    # Reject obvious non-article paths (search/category pages)
+    bad_path_patterns = ("/search", "/list", "/category", "/tag/", "/index", "/cate")
+    path = parsed.path.lower()
+    if any(p in path for p in bad_path_patterns):
+        return False
+    # Real articles usually have a non-trivial path
+    if path in ("", "/", "/index.html"):
+        return False
+    return True
+
+
+def _check_url_alive(url: str, timeout: float = 8.0) -> bool:
+    """HEAD-check a URL. Returns False on 4xx/5xx/error. Defaults to True if SKIP."""
+    if SKIP_URL_CHECK:
+        return True
+    try:
+        with httpx.Client(follow_redirects=True, timeout=timeout) as client:
+            r = client.head(url, headers={"User-Agent": "Mozilla/5.0 twtimeline-agent"})
+            # Some sites return 405 to HEAD; fall back to GET (range 0-0 is light)
+            if r.status_code in (403, 405, 501):
+                r = client.get(url, headers={"User-Agent": "Mozilla/5.0 twtimeline-agent", "Range": "bytes=0-1023"})
+            return r.status_code < 400
+    except Exception as e:
+        print(f"[url-check] {url}: {type(e).__name__}", flush=True)
+        return False
+
+
+def _sanitize_sources(sources, event_title: str) -> list[dict]:
+    """Validate and clean a list of source objects. Drops bad ones, dedupes by outlet, HEAD-checks live URLs."""
+    if not isinstance(sources, list) or not sources:
+        return []
+    cleaned = []
+    seen_outlets = set()
+    seen_urls = set()
+    for s in sources:
+        if not isinstance(s, dict):
+            continue
+        outlet = (s.get("outlet") or "").strip()
+        title = (s.get("title") or "").strip() or event_title
+        url = (s.get("url") or "").strip()
+        if not outlet or not _is_valid_url(url):
+            print(f"[parse]   ! drop source (bad outlet/url): {outlet} {url[:60]}", flush=True)
+            continue
+        # Dedupe within event
+        if outlet in seen_outlets or url in seen_urls:
+            print(f"[parse]   ! drop duplicate source: {outlet} {url[:60]}", flush=True)
+            continue
+        if not _check_url_alive(url):
+            print(f"[parse]   ! drop dead source: {outlet} {url[:60]}", flush=True)
+            continue
+        seen_outlets.add(outlet)
+        seen_urls.add(url)
+        cleaned.append({"outlet": outlet, "title": title, "url": url})
+    return cleaned
 
 
 # ─── merge into events.json ────────────────────────────────────────────────────
@@ -248,28 +403,31 @@ def main():
         json.dump(merged, f, ensure_ascii=False, indent=2)
     print(f"[main] Saved {len(merged)} events to {OUTPUT_FILE}", flush=True)
 
-    # Print summary for PR body
+    # Print summary
     print("\n[main] New events added:", flush=True)
     for ev in new_events:
         print(f"  - [{ev['date']}] {ev['title']}", flush=True)
         print(f"    {ev['desc'][:60]}...", flush=True)
-        print(f"    {ev['source_url']}", flush=True)
+        for s in ev["sources"]:
+            print(f"    [{s['outlet']}] {s['url']}", flush=True)
 
-    # Write PR body to file for the workflow to use
+    # Write commit-message body for the workflow's `git commit -m ... -m "$body"`
     pr_body_file = REPO_ROOT / "agents" / ".pr_body.md"
     lines = [
-        f"## 自動新增台灣重大事件 ({target_date.isoformat()})\n",
-        "以下事件由 Claude Sonnet 4.6 + web_search 搜尋並驗證，符合「寧缺勿濫」收錄標準（評分 ≥ 7/10）。\n",
-        "**請人工審查後合併，如有疑義請關閉此 PR 並加上 `rejected` 標籤。**\n\n",
-        "### 新增事件\n",
+        f"自動新增台灣重大事件 ({target_date.isoformat()})\n\n",
+        "由 Claude Sonnet 4.6 + web_search 搜尋並驗證，符合「寧缺勿濫」收錄標準（評分 ≥ 7/10）。\n",
+        "每筆事件已交叉驗證 1-4 個不同媒體來源。\n\n",
+        "新增事件：\n",
     ]
     for ev in new_events:
-        lines.append(f"#### [{ev['date']}] {ev['title']}\n")
-        lines.append(f"{ev['desc']}\n\n")
-        lines.append(f"- 標籤：{', '.join(ev['tags'])}\n")
-        lines.append(f"- 來源：{ev['source_url']}\n\n")
+        lines.append(f"\n[{ev['date']}] {ev['title']}\n")
+        lines.append(f"{ev['desc']}\n")
+        lines.append(f"標籤：{', '.join(ev['tags'])}\n")
+        lines.append(f"來源（{len(ev['sources'])} 筆）：\n")
+        for s in ev["sources"]:
+            lines.append(f"  - {s['outlet']}: {s['url']}\n")
     pr_body_file.write_text("".join(lines), encoding="utf-8")
-    print(f"[main] PR body written to {pr_body_file}", flush=True)
+    print(f"[main] Commit body written to {pr_body_file}", flush=True)
 
 
 if __name__ == "__main__":
