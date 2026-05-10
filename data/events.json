@@ -7,17 +7,29 @@
       "政治",
       "經濟"
     ],
-    "source_url": "https://www.cna.com.tw/news/aipl/202605080209.aspx"
-  },
-  {
-    "date": "2026-05-05",
-    "title": "賴清德訪史瓦帝尼突破封鎖返台",
-    "desc": "總統賴清德原訂4月22日出訪非洲友邦史瓦帝尼，因中國施壓塞席爾、模里西斯、馬達加斯加三國臨時取消飛航許可而暫緩。5月2日，賴清德改搭史瓦帝尼國王恩史瓦帝三世私人專機，以「抵達後公開」（ATA）模式秘密出訪，為台灣總統出訪邦交國首例。5日順利返台，F-16戰機護航。此行被《華爾街日報》形容為台灣在兩岸外交角力中「智取中國」，美國務院亦公開表態支持，具重大外交象徵意義。",
-    "tags": [
-      "外交",
-      "兩岸"
-    ],
-    "source_url": "https://news.pts.org.tw/article/806612"
+    "source_url": "https://www.cna.com.tw/news/aipl/202605080209.aspx",
+    "sources": [
+      {
+        "outlet": "中央社",
+        "title": "保衛國家安全及強化不對稱戰力計畫採購特別條例三讀通過",
+        "url": "https://www.cna.com.tw/news/aipl/202605080209.aspx"
+      },
+      {
+        "outlet": "聯合新聞網",
+        "title": "立院三讀通過「軍購特別條例」 藍白版總額7800億元",
+        "url": "https://udn.com/news/story/124768/9490832"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "藍白7800億軍購條例設「1年1審」機制 綠委憂：執行風險大",
+        "url": "https://news.ltn.com.tw/news/politics/breakingnews/5432133"
+      },
+      {
+        "outlet": "客新聞",
+        "title": "國防特別條例三讀通過 預算匡列上限「7800億」分兩批編列",
+        "url": "https://hakkanews.tw/2026/05/08/276630/"
+      }
+    ]
   },
   {
     "date": "2026-05-02",
@@ -96,7 +108,29 @@
       "政治",
       "選舉"
     ],
-    "source_url": "https://udn.com/news/story/124652/9469332"
+    "source_url": "https://udn.com/news/story/124652/9469332",
+    "sources": [
+      {
+        "outlet": "聯合新聞網",
+        "title": "新北藍白整合成功！李四川民調勝出 黃國昌說到做到全力輔選",
+        "url": "https://udn.com/news/story/124652/9469332"
+      },
+      {
+        "outlet": "中央社",
+        "title": "新北市長選舉藍白合民調出爐 李四川勝出",
+        "url": "https://www.cna.com.tw/news/aipl/202604280191.aspx"
+      },
+      {
+        "outlet": "自由時報",
+        "title": "新北市長選舉藍白合民調揭曉！國民黨李四川勝出 黃國昌2份民調都輸",
+        "url": "https://news.ltn.com.tw/news/politics/breakingnews/5418501"
+      },
+      {
+        "outlet": "新頭殼",
+        "title": "新北市長選舉「藍白合」民調結果今揭曉 李四川、黃國昌將同台",
+        "url": "https://newtalk.tw/news/view/2026-04-28/1032083"
+      }
+    ]
   },
   {
     "date": "2026-04-27",
@@ -105,7 +139,24 @@
     "tags": [
       "兩岸"
     ],
-    "source_url": "https://def.ltn.com.tw/article/breakingnews/5417810"
+    "source_url": "https://def.ltn.com.tw/article/breakingnews/5417810",
+    "sources": [
+      {
+        "outlet": "自由時報",
+        "title": "共軍驅逐艦、護衛艦進入澎湖西南海域 監控照清晰可見",
+        "url": "https://def.ltn.com.tw/article/breakingnews/5417810"
+      },
+      {
+        "outlet": "聯合新聞網",
+        "title": "共艦編隊進入澎湖西南海域 國軍公布監控影像",
+        "url": "https://udn.com/news/story/10930/9467838"
+      },
+      {
+        "outlet": "大紀元",
+        "title": "中共艦編隊進入澎湖海域 台軍公布監控影像",
+        "url": "https://www.epochtimes.com/b5/26/4/28/n14751527.htm"
+      }
+    ]
   },
   {
     "date": "2026-04-27",
@@ -115,7 +166,24 @@
       "司法",
       "科技"
     ],
-    "source_url": "https://udn.com/news/story/7321/9466900"
+    "source_url": "https://udn.com/news/story/7321/9466900",
+    "sources": [
+      {
+        "outlet": "聯合新聞網",
+        "title": "國安法首例！台積電洩密案 4內鬼工程師遭判2到10年",
+        "url": "https://udn.com/news/story/7321/9466521"
+      },
+      {
+        "outlet": "TVBS新聞網",
+        "title": "台積電「奈米、埃米」遭內鬼翻拍外流 主謀工程師判10年理由",
+        "url": "https://news.tvbs.com.tw/local/3189109"
+      },
+      {
+        "outlet": "大紀元",
+        "title": "台積電2奈米洩密案 離職工程師陳力銘判10年",
+        "url": "https://www.epochtimes.com/b5/26/4/27/n14750905.htm"
+      }
+    ]
   },
   {
     "date": "2026-04-27",
@@ -124,17 +192,24 @@
     "tags": [
       "經濟"
     ],
-    "source_url": "https://udn.com/news/story/7251/9466162"
-  },
-  {
-    "date": "2026-04-22",
-    "title": "賴清德出訪非洲遭空中圍堵",
-    "desc": "台灣總統賴清德原定4月22日至27日出訪非洲唯一邦交國史瓦帝尼，出發前夕，中國向塞席爾、模里西斯、馬達加斯加三國施壓，以威脅撤銷債務豁免、停止融資等經濟脅迫手段，迫使三國無預警取消台灣元首專機飛航許可。此為史上首次台灣總統出訪行程遭「空中圍堵」而被迫取消，美國國務院譴責中國濫用國際民航體系，日本、歐盟及IPAC等國際社會廣泛聲援台灣，具重大外交意義。",
-    "tags": [
-      "外交",
-      "兩岸"
-    ],
-    "source_url": "https://udn.com/news/story/124844/9456254"
+    "source_url": "https://udn.com/news/story/7251/9466162",
+    "sources": [
+      {
+        "outlet": "聯合新聞網",
+        "title": "台股加權指數首次突破四萬點",
+        "url": "https://udn.com/news/story/7251/9466162"
+      },
+      {
+        "outlet": "TechNews 科技新報",
+        "title": "台股指數驚異大奇航！昔攻克 2 萬點花 35 年，今達陣 4 萬點僅需 119 天",
+        "url": "https://technews.tw/2026/05/04/taiwan-stock-index-takes-an-amazing-flight/"
+      },
+      {
+        "outlet": "豐雲學堂",
+        "title": "台股盤後｜盤中首度突破4萬點關卡，加權指數收39,616點上漲684點",
+        "url": "https://www.sinotrade.com.tw/richclub/hotstock/%E5%8F%B0%E8%82%A1%E7%9B%A4%E5%BE%8C-%E7%9B%A4%E4%B8%AD%E9%A6%96%E5%BA%A6%E7%AA%81%E7%A0%B44%E8%90%AC%E9%BB%9E%E9%97%9C%E5%8D%A1-%E5%8A%A0%E6%AC%8A%E6%8C%87%E6%95%B8%E6%94%B639-616%E9%BB%9E%E4%B8%8A%E6%BC%B2684%E9%BB%9E-%E7%9B%A4%E4%B8%AD%E5%8F%B0%E7%A9%8D%E9%9B%BB%E8%B2%A2%E7%8D%BB%E9%BB%9E%E6%95%B8%E6%9C%80%E9%AB%98%E8%B6%85%E8%B6%8A%E6%8C%87%E6%95%B8-0427-69ef12f17bc82320cc852353"
+      }
+    ]
   },
   {
     "date": "2026-04-21",
