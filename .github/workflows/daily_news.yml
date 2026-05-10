@@ -16,11 +16,12 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -66,28 +67,27 @@ jobs:
             echo "has_events=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Read PR body
-        id: pr_body
+      - name: Commit and push to main
         if: steps.check.outputs.has_events == 'true'
+        env:
+          TARGET_DATE: ${{ github.event.inputs.target_date || 'today' }}
         run: |
-          {
-            echo 'body<<PR_BODY_EOF'
-            cat agents/.pr_body.md
-            echo 'PR_BODY_EOF'
-          } >> "$GITHUB_OUTPUT"
-
-      - name: Create Pull Request
-        if: steps.check.outputs.has_events == 'true'
-        uses: peter-evans/create-pull-request@v6
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "feat: add Taiwan events for ${{ github.event.inputs.target_date || 'today' }}"
-          branch: "auto/news-${{ github.run_id }}"
-          delete-branch: true
-          title: "自動新增台灣重大事件 (${{ github.event.inputs.target_date || 'auto' }})"
-          body: ${{ steps.pr_body.outputs.body }}
-          labels: "auto-news,needs-review"
-          draft: false
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/events.json README.md
+          git commit -m "feat: add Taiwan events for ${TARGET_DATE}" -m "$(cat agents/.pr_body.md)"
+          # Retry on race condition: rebase onto latest origin/main and push again
+          for attempt in 1 2 3; do
+            git pull --rebase origin main || exit 1
+            if git push origin HEAD:main; then
+              echo "Pushed on attempt ${attempt}"
+              exit 0
+            fi
+            echo "Push attempt ${attempt} failed; retrying after rebase..."
+            sleep 5
+          done
+          echo "Push failed after 3 attempts" >&2
+          exit 1
 
       - name: Cleanup temp files
         if: always()
