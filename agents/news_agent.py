@@ -386,8 +386,32 @@ def main():
         existing_events = json.load(f)
     print(f"[main] Loaded {len(existing_events)} existing events.", flush=True)
 
-    # Run agent
-    new_events = run_agent(target_date, existing_events)
+    # Run agent — wrap in try/except so credit/quota exhaustion becomes a
+    # graceful no-op rather than a noisy workflow failure. Transient/unknown
+    # errors are still re-raised so cron retries surface real problems.
+    try:
+        new_events = run_agent(target_date, existing_events)
+    except anthropic.APIError as e:
+        msg = str(e).lower()
+        status = getattr(e, "status_code", None)
+        billing_keywords = ("credit balance", "credit", "quota", "spend limit",
+                            "billing", "monthly cap", "payment required",
+                            "insufficient", "exceeded your")
+        is_billing = status == 402 or any(k in msg for k in billing_keywords)
+        if is_billing:
+            print(f"[main] !! Anthropic API billing/quota exhausted — graceful no-op.", flush=True)
+            print(f"[main]    error: {e}", flush=True)
+            marker = REPO_ROOT / "agents" / ".no_new_events"
+            marker.write_text(
+                f"Skipped {target_date.isoformat()}: API billing/quota exhausted\n"
+                f"{e}\n",
+                encoding="utf-8",
+            )
+            sys.exit(0)
+        # Other API errors (network, 5xx, rate limit) — fail loudly so cron
+        # retries see the failure
+        print(f"[main] !! Anthropic API error (non-billing) — failing run: {e}", flush=True)
+        raise
     print(f"\n[main] Found {len(new_events)} new qualifying event(s).", flush=True)
 
     if not new_events:
